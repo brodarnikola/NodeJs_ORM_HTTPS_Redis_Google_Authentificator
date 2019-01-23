@@ -5,6 +5,10 @@ const PORT = 5000;
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 
+const PORT_ENV = process.env.PORT;
+
+require('dotenv').config();
+console.log("aaaa: " + process.env.FOO);
 
 require('./database/DB_Pepac');
 
@@ -29,4 +33,5 @@ app.use('/', UserRouter);
 
 app.listen(PORT, function(){
     console.log('Server is running on Port: ',PORT);
+    console.log('Server is running on Port: ',PORT_ENV);
 });

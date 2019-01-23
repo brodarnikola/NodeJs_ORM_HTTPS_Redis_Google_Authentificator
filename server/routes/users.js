@@ -136,8 +136,8 @@ router.post('/signUpUser', async function (req, res, next) {
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: "brodarnikola7@gmail.com",
-            pass: "wbistnszlmnxeotd",
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS,
         },
     });
 
@@ -191,7 +191,7 @@ router.post('/signUpUser', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '1h', // 1 hour
+                expiresIn: '12h', // 12 hours
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
@@ -219,10 +219,15 @@ router.post('/signUpUser', async function (req, res, next) {
 });
 
 
-router.get('/confirmation/:token', /* middleware.checkToken, */ async function (req, res, next) {
+router.get('/confirmation/:token',  /* middleware.checkToken, */  async function (req, res, next) {
+
+    let userId
+
+    // if token has expired, I need to get user id
+    let decodedToken = jwt.decode(req.params.token, config.secret);
 
     try {
-        const userId = jwt.verify(req.params.token, config.secret);
+        userId = jwt.verify(req.params.token, config.secret);
 
         let pool = require('../database/DB_Pepac.js');
 
@@ -245,8 +250,11 @@ router.get('/confirmation/:token', /* middleware.checkToken, */ async function (
     } catch (error) {
         //res.send(new Error(error))
         //res.send(error);
+        //let getUserId = userId.id;
+        //console.log("user id je: ==> " + userId.id);
         return res.json({
             success: false,
+            id: decodedToken.id,
             message: 'Token has expired'
         });
     }
@@ -259,22 +267,19 @@ router.post('/sendOneMoreToken', async function (req, res, next) {
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: "brodarnikola7@gmail.com",
-            pass: "wbistnszlmnxeotd",
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS,
         },
     });
 
     var requestObj = {
-        username: req.body.username,
-        password: req.body.password
+        userId: req.body.userId
     }
 
-    let correctUsername = requestObj.username;
-    let correctPassword = requestObj.password;
+    let correctUserId = requestObj.userId;
     let pool = require('../database/DB_Pepac.js');
 
-    let sql = "SELECT id, username, password, email FROM  users  WHERE username = '" + correctUsername
-        + "' AND password = '" + correctPassword + "'";
+    let sql = "SELECT id, username, password, email FROM  users  WHERE id = '" + correctUserId + "'";
 
     try {
 
@@ -289,7 +294,7 @@ router.post('/sendOneMoreToken', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '1h',  // 1 hour
+                expiresIn: '12h',  // 12 hours
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
