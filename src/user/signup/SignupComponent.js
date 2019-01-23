@@ -9,7 +9,7 @@ export default class SignupComponent extends Component {
     constructor(props) {
         super(props);
 
-        this.checkUsernameOrEmail = this.checkUsernameOrEmail.bind(this);
+        this.checkIfUsernameOrEmailExists = this.checkIfUsernameOrEmailExists.bind(this);
         this.onChangeSurnameAndName = this.onChangeSurnameAndName.bind(this);
         this.onChangeUsername = this.onChangeUsername.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
@@ -66,7 +66,7 @@ export default class SignupComponent extends Component {
         });
     }
 
-    checkUsernameOrEmail() {
+    checkIfUsernameOrEmailExists() {
 
         const serverport = {
             username: this.state.username,
@@ -79,7 +79,7 @@ export default class SignupComponent extends Component {
 
         console.log("podaci su: " + serverport.username)
 
-        axios.post('http://localhost:5000/checkUsernameOrEmail', serverport)
+        axios.post('http://localhost:5000/checkIfUsernameOrEmailExists', serverport)
             .then(res =>
                     this.setState({
                         checkEmailOrUsername: res.data
@@ -133,7 +133,7 @@ export default class SignupComponent extends Component {
 
             // provjeri ako postoji več taj username ili email
 
-            //this.checkUsernameOrEmail();
+            //this.checkIfUsernameOrEmailExists();
             //console.log(this.state.checkEmailOrUsername)
             //if( this.state.checkEmailOrUsername >= 1 )
             //    getButtonClickAllowed = false
@@ -158,7 +158,7 @@ export default class SignupComponent extends Component {
                     <div className="form-group">
                         <label>Username:  </label>
                         <input type="text" value={this.state.username} className="form-control"
-                               /* onBlur={ this.checkUsernameOrEmail } */
+                               /* onBlur={ this.checkIfUsernameOrEmailExists } */
                                onChange={(event) => this.onChangeUsername(event, this.validateUsername)}  />
                         {this.state.checkEmailOrUsername >= 1 &&
                             <p>This username already exists</p>
@@ -167,7 +167,7 @@ export default class SignupComponent extends Component {
                     <div className="form-group">
                         <label>Email: </label>
                         <input type="text" value={this.state.email} className="form-control"
-                                /* onBlur={ this.checkUsernameOrEmail } */
+                                /* onBlur={ this.checkIfUsernameOrEmailExists } */
                                onChange={ this.onChangeEmail.bind(this)}   />
                         {this.state.checkEmailOrUsername >= 1 &&
                             <p>This email already exists</p>

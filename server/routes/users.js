@@ -32,12 +32,11 @@ router.post('/loginUser', async function (req, res, next) {
 
         if (result) {
             const JWTToken = jwt.sign({
-                    //email: result[0].email,
                     id: result[0].id
                 },
                 config.secret,
                 {
-                    expiresIn: '12h'
+                    expiresIn: '12h'  // 12 hours
                 });
             return res.status(200).json({
                 success: true,  // 'Welcome to the JWT Auth'
@@ -46,8 +45,7 @@ router.post('/loginUser', async function (req, res, next) {
             });
         }
 
-        //console.log("loginUser da li ce uci 222" + result);
-        //console.log("result je: " + result[0].username + " aaaa: "  + result.toString())
+        //console.log("result je: " + result[0].username + " aaaa: "  + result.toString()  + " ddd: " ++ result)
         //res.send(result)
     } catch (err) {
 
@@ -94,7 +92,7 @@ router.post('/checkPictureComponent', middleware.checkToken, async function (req
 });
 
 
-router.post('/checkUsernameOrEmail', async function (req, res, next) {
+router.post('/checkIfUsernameOrEmailExists', async function (req, res, next) {
 
     var requestObj = {
         username: req.body.username,
@@ -193,7 +191,7 @@ router.post('/signUpUser', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '15s',
+                expiresIn: '1h', // 1 hour
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
@@ -291,7 +289,7 @@ router.post('/sendOneMoreToken', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '20s',
+                expiresIn: '1h',  // 1 hour
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
