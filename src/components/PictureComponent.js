@@ -22,8 +22,6 @@ export default class PictureComponent extends Component {
             loading: true
         })
 
-        console.log("ACCESS TOKEN JE: " + localStorage.getItem(ACCESS_TOKEN))
-
         if (  localStorage.getItem(ACCESS_TOKEN) !== "undefined") {
 
             let config = {
@@ -75,8 +73,8 @@ export default class PictureComponent extends Component {
                 <h3>PICTURES</h3>
 
                 <img src={require('../images/lion.jpg')}
-                     style={{  width: "300px", height: "200px", marginRight: "50px"}}  />
-                <img src={require('../images/delfin.jpg')} style={{  width: "300px", height: "200px"}}  />
+                     style={{  width: "300px", height: "200px", marginRight: "50px"}}  alt={""} />
+                <img src={require('../images/delfin.jpg')} style={{  width: "300px", height: "200px"}}  alt={""} />
             </div>
         )
     }

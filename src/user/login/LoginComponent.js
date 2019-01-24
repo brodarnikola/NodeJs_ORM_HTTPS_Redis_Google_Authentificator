@@ -24,8 +24,10 @@ export default class LoginComponent extends Component {
             wrongUsernameOrPassword: false,
             accessToken: 0,
             wrongToken: 0,
+            showResetTokenButton: 0,
             confirmAccessToken: 0,
-            sendOneMoreToken: 0
+            sendOneMoreToken: 0,
+            receivedUserId: 0
         }
     }
 
@@ -66,13 +68,20 @@ export default class LoginComponent extends Component {
             else if (this.props.location.state.wrongTokenProps === 1) {
 
                 this.setState({
-                    wrongToken: 1
+                    receivedUserId: this.props.location.state.getUserId,
+                    wrongToken: 1,
+                    showResetTokenButton: 1
                 })
 
                 const history = createHistory();
                 if (history.location && history.location.state && history.location.state.wrongTokenProps) {
                     const state = {...history.location.state};
                     delete state.wrongTokenProps;
+                    history.replace({...history.location, state});
+                }
+                if (history.location && history.location.state && history.location.state.getUserId) {
+                    const state = {...history.location.state};
+                    delete state.getUserId;
                     history.replace({...history.location, state});
                 }
             }
@@ -90,6 +99,7 @@ export default class LoginComponent extends Component {
                 }
             }
         }
+
     }
 
     onChangeUsername(e) {
@@ -149,7 +159,7 @@ export default class LoginComponent extends Component {
                         this.props.onLogin()
                     }
                     else {
-                        console.log("55555 NIJE PRONADEN TAJ USER: ");
+                        //console.log("55555 NIJE PRONADEN TAJ USER: ");
                         this.setState({
                             password: "",
                             username: "",
@@ -159,7 +169,7 @@ export default class LoginComponent extends Component {
                     }
 
                 } catch (error) {
-                    console.log("NIJE PRONADEN TAJ USER: " + error);
+                    //console.log("NIJE PRONADEN TAJ USER: " + error);
                     this.setState({
                         password: "",
                         username: "",
@@ -174,11 +184,8 @@ export default class LoginComponent extends Component {
 
     sendOneMoreTokenFunction(e) {
 
-        console.log("SEND ONE MORE TOKEN,,, FRONTEND")
-
         const serverport = {
-            username: this.state.username,
-            password: this.state.password
+            userId: this.state.receivedUserId
         }
 
         this.setState({
@@ -188,11 +195,11 @@ export default class LoginComponent extends Component {
         axios.post('http://localhost:5000/sendOneMoreToken', serverport)
             .then( res => {
 
-                    console.log("nakon responsa od servera: ==> "  +res.data.success);
-                    if( res.data.success === true ) {
+                     if( res.data.success === true ) {
                         this.setState({
                             sendOneMoreToken: 1,
                             loading: false,
+                            showResetTokenButton: 0,
                             wrongToken: 0
                         })
                     }
@@ -256,10 +263,10 @@ export default class LoginComponent extends Component {
                         {this.state.loading === true &&
                             <LoadingIndicatorBesideElement/>
                         }
-                        {this.state.wrongToken === 1 &&
+                        {this.state.showResetTokenButton === 1 &&
 
-                            <input type="submit" value="Send token" className={buttonClickAllowed}
-                                onClick={this.sendOneMoreTokenFunction.bind(this)}   disabled={!getButtonClickAllowed}/>
+                            <input type="button"  value=" Send token" className="button_allowed"
+                                   onClick={this.sendOneMoreTokenFunction.bind(this)}  />
                         }
                         {this.state.sendOneMoreToken === 1 &&
 

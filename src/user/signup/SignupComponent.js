@@ -91,7 +91,7 @@ export default class SignupComponent extends Component {
     onSubmit(e) {
 
         e.preventDefault();
-        console.log(`username is ${this.state.username} and password is ${this.state.password}`);
+
         const serverport = {
             name: this.state.name,
             username: this.state.username,

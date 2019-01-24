@@ -21,7 +21,6 @@ export default class ConfirmationTokenComponent extends Component {
         this.props.passClick(menuOrangeIndicator);
 
         let token = this.props.match.params.token;
-        console.log("CONFIRMATION TOKEN JE : " + token);
 
         /* 1) nacin
          let config = {
@@ -40,7 +39,7 @@ export default class ConfirmationTokenComponent extends Component {
                     if (response.data.success === false) {
                         this.props.history.push({
                             pathname: '/login',
-                            state: { wrongTokenProps: 1 }
+                            state: { wrongTokenProps: 1, getUserId: response.data.id }
                         })
                     }
                     else {

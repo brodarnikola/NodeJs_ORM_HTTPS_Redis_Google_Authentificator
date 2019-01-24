@@ -45,7 +45,7 @@ class CreateComponent extends Component {
     onSubmit(e) {
 
         e.preventDefault();
-        console.log(`name is ${this.state.name} and address is ${this.state.address}`);
+        //console.log(`name is ${this.state.name} and address is ${this.state.address}`);
         const serverport = {
             name: this.state.name,
             address: this.state.address
