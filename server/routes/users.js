@@ -55,6 +55,68 @@ router.post('/loginUser', async function (req, res, next) {
     }
 });
 
+router.post('/forgotUserPassword', async function (req, res, next) {
+
+    const transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS,
+        },
+    });
+    //console.log("loginUser da li ce uci");
+    var requestObj = {
+        email: req.body.email
+    }
+
+    let correctEmail = requestObj.email;
+
+    let pool = require('../database/DB_Pepac.js');
+
+    let sql = "SELECT id, username, password, email FROM users  WHERE email = '" + correctEmail + "'";
+
+    try {
+
+        let result;
+        await pool.query(sql).then(rows => {
+            result = rows;
+        })
+
+        jwt.sign(
+            {
+                id: result[0].id
+            },
+            config.secret,
+            {
+                expiresIn: '12h',  // 12 hours
+            },
+            (err, emailToken) => {
+                // moram SKUŽITI KAK DODATI VIŠE PARAMETRI.. TREBAM POSLATI 2 PARAMETRE, ID od USERA i TOKEN
+                const url = `http://localhost:3000/changePassword/${emailToken}`;
+
+                transporter.sendMail({
+                    to: result[0].email,
+                    subject: 'Confirm Email',
+                    html: `Please click this email to confirm your email: <a href="${url}">${url}</a>`,
+                });
+            },
+        );
+        return res.status(200).json({
+            success: true,  // 'Welcome to the JWT Auth'
+            message: "One more token has been send succesfully"
+            //token: JWTToken
+        });
+
+        //console.log("result je: " + result[0].username + " aaaa: "  + result.toString()  + " ddd: " ++ result)
+        //res.send(result)
+    } catch (err) {
+
+        //console.log("loginUser da li ce uci 333" + err);
+        //throw new Error(err)
+        res.send(new Error(err))
+    }
+});
+
 router.post('/user/me', async function (req, res, next) {
 
     var requestObj = {
