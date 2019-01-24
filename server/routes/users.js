@@ -91,13 +91,18 @@ router.post('/forgotUserPassword', async function (req, res, next) {
                 expiresIn: '12h',  // 12 hours
             },
             (err, emailToken) => {
+
+                //getAppUrl() + "/changePassword?id=" +
+                //user.getId() + "&token=" + token;
+
                 // moram SKUŽITI KAK DODATI VIŠE PARAMETRI.. TREBAM POSLATI 2 PARAMETRE, ID od USERA i TOKEN
+                //const url = `http://localhost:3000/changePassword?id=${result[0].id}&token=${emailToken}`;
                 const url = `http://localhost:3000/changePassword/${emailToken}`;
 
                 transporter.sendMail({
                     to: result[0].email,
-                    subject: 'Confirm Email',
-                    html: `Please click this email to confirm your email: <a href="${url}">${url}</a>`,
+                    subject: 'Forgot password email',
+                    html: `Please click this email to confirm your forgot password email: <a href="${url}">${url}</a>`,
                 });
             },
         );
@@ -115,6 +120,116 @@ router.post('/forgotUserPassword', async function (req, res, next) {
         //throw new Error(err)
         res.send(new Error(err))
     }
+});
+
+router.post('/readforgotPasswordToken/:token', async function (req, res, next) {
+
+    let userId
+
+    // TODO: If token has expired, then I want to send response, to user that token has expired
+    // let decodedToken = jwt.decode(req.params.token, config.secret);
+
+    try {
+        userId = jwt.verify(req.params.token, config.secret);
+
+        // check how many rows are affected with this update sql query
+        console.log("ispis je: " + userId.id)
+
+        return res.json({
+            success: true,
+            id: userId.id,
+            message: 'Token is valid'
+        });
+    } catch (error) {
+        //res.send(new Error(error))
+        //res.send(error);
+        //let getUserId = userId.id;
+        //console.log("user id je: ==> " + userId.id);
+
+        // TODO: If token has expired, then I want to send response, to user that token has expired
+        return res.json({
+            success: false,
+            message: 'Token has expired'
+        });
+    }
+
+});
+
+router.post('/updateUserPassword', async function (req, res, next) {
+
+    //console.log("loginUser da li ce uci");
+    var requestObj = {
+        passwordFirstValue: req.body.passwordFirstValue,
+        userId: req.body.userId
+    }
+
+    let correctPassword = requestObj.passwordFirstValue;
+    let correctUserId = requestObj.userId;
+
+    let pool = require('../database/DB_Pepac.js');
+
+    try {
+
+        let sql = "UPDATE users " +
+            "SET password = '" + correctPassword + "' " +
+            " WHERE  id = '" + correctUserId + "'";
+
+        let result;
+        await pool.query(sql).then(rows => {
+            result = rows;
+        })
+
+        // check how many rows are affected with this update sql query
+        console.log("ispis je: " + result.affectedRows)
+
+        return res.json({
+            success: true,
+            message: 'User password has been successfully updated'
+        });
+    } catch (error) {
+        //res.send(new Error(error))
+        //res.send(error);
+        //let getUserId = userId.id;
+        //console.log("user id je: ==> " + userId.id);
+        return res.json({
+            success: false,
+            message: 'User password did not successfully updated'
+        });
+    }
+
+    /* let sql = "SELECT id, username, password, email FROM users  WHERE username = '" + correctUsername
+        + "' AND password = '" + correctPassword + "' AND enabled = '1'";
+
+    try {
+
+        let result;
+        await pool.query(sql).then(rows => {
+            result = rows;
+        })
+
+        if (result) {
+            const JWTToken = jwt.sign({
+                    id: result[0].id
+                },
+                config.secret,
+                {
+                    expiresIn: '12h'  // 12 hours
+                });
+            return res.status(200).json({
+                success: true,  // 'Welcome to the JWT Auth'
+                token: JWTToken,
+                currentUser: result[0]
+            });
+        }
+
+        //console.log("result je: " + result[0].username + " aaaa: "  + result.toString()  + " ddd: " ++ result)
+        //res.send(result)
+    } catch (err) {
+
+        //console.log("loginUser da li ce uci 333" + err);
+        //throw new Error(err)
+        res.send(new Error(err))
+    } */
 });
 
 router.post('/user/me', async function (req, res, next) {
@@ -253,7 +368,7 @@ router.post('/signUpUser', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '12h', // 12 hours
+                expiresIn: '10s', // 12 hours
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
@@ -356,15 +471,15 @@ router.post('/sendOneMoreToken', async function (req, res, next) {
             },
             config.secret,
             {
-                expiresIn: '12h',  // 12 hours
+                expiresIn: '10s',  // 12 hours
             },
             (err, emailToken) => {
                 const url = `http://localhost:3000/confirmation/${emailToken}`;
 
                 transporter.sendMail({
                     to: result[0].email,
-                    subject: 'Confirm Email',
-                    html: `Please click this email to confirm your email: <a href="${url}">${url}</a>`,
+                    subject: 'One more token send',
+                    html: `Please click this email to confirm your one more token email: <a href="${url}">${url}</a>`,
                 });
             },
         );

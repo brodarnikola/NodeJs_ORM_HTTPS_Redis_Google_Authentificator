@@ -14,7 +14,7 @@ export const NAME_MIN_LENGTH = 4;
 export const NAME_MAX_LENGTH = 40;
 
 export const CUSTOMER_NAME_ADDRESS_MIN_LENGTH = 4;
-export const CUSTOMER_NAME_ADDRESS_MAX_LENGTH = 15;
+export const CUSTOMER_NAME_ADDRESS_MAX_LENGTH = 35;
 
 export const EMAIL_MAX_LENGTH = 40;
 

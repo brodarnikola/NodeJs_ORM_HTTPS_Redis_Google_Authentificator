@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/server/routes/users.js" line="94" />
+    <bookmark url="file://$PROJECT_DIR$/server/routes/users.js" line="271" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81e65afa-4b3e-4736-ad9a-5d86ac048c03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PictureComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PictureComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/ForgotPassword/ForgotPasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/login/LoginComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/inputValidations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/inputValidations.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +26,7 @@
     <session id="-1061149401">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="151" />
+          <entry key="project.closed" value="159" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="3" />
@@ -31,24 +35,24 @@
           <entry key="project.open.time.14" value="7" />
           <entry key="project.open.time.15" value="6" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="9" />
+          <entry key="project.open.time.17" value="11" />
           <entry key="project.open.time.18" value="13" />
           <entry key="project.open.time.19" value="10" />
           <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.20" value="5" />
+          <entry key="project.open.time.20" value="6" />
           <entry key="project.open.time.21" value="7" />
           <entry key="project.open.time.22" value="5" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="4" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="5" />
-          <entry key="project.open.time.27" value="7" />
-          <entry key="project.open.time.28" value="5" />
+          <entry key="project.open.time.27" value="8" />
+          <entry key="project.open.time.28" value="6" />
           <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.30" value="4" />
+          <entry key="project.open.time.30" value="5" />
           <entry key="project.open.time.31" value="6" />
-          <entry key="project.open.time.32" value="3" />
+          <entry key="project.open.time.32" value="5" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="3" />
@@ -59,12 +63,12 @@
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="152" />
+          <entry key="project.opened" value="160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="152" />
+          <entry key="ESLintLanguageService" value="160" />
           <entry key="TypeScriptServerServiceImpl" value="3" />
         </counts>
       </usages-collector>
@@ -74,10 +78,10 @@
           <entry key="371" value="2" />
           <entry key="372" value="1" />
           <entry key="589" value="1" />
-          <entry key="css" value="12" />
+          <entry key="css" value="13" />
           <entry key="env" value="4" />
           <entry key="html" value="1" />
-          <entry key="js" value="221" />
+          <entry key="js" value="228" />
           <entry key="json" value="2" />
           <entry key="png" value="2" />
           <entry key="scss" value="3" />
@@ -86,11 +90,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="12" />
+          <entry key="CSS" value="13" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="226" />
+          <entry key="JavaScript" value="233" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="3" />
           <entry key="TypeScript" value="5" />
@@ -100,17 +104,17 @@
         <counts>
           <entry key="css" value="244" />
           <entry key="dummy" value="21" />
-          <entry key="env" value="36" />
-          <entry key="js" value="20584" />
+          <entry key="env" value="43" />
+          <entry key="js" value="23469" />
           <entry key="json" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="31" />
+          <entry key=".env file" value="38" />
           <entry key="CSS" value="244" />
           <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="20583" />
+          <entry key="JavaScript" value="23468" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="SQL" value="1" />
         </counts>
@@ -120,10 +124,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="425">
+              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -131,74 +135,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/login/LoginComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="164" column="41" lean-forward="true" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="41" />
+            <state relative-caret-position="294">
+              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#4091#4171#0" />
-                <element signature="e#4197#4277#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="187" column="17" lean-forward="true" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
               <folding>
                 <element signature="e#319#1638#0" />
-                <element signature="e#1698#2346#0" />
-                <element signature="e#2444#2512#0" />
-                <element signature="e#2594#3802#0" />
+                <element signature="e#3833#4735#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
+        <entry file="file://$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="77">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/.env">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2312">
-              <caret line="236" column="36" selection-start-line="236" selection-start-column="36" selection-end-line="236" selection-end-column="36" />
+            <state relative-caret-position="3026">
+              <caret line="278" column="92" selection-start-line="278" selection-start-column="92" selection-end-line="278" selection-end-column="92" />
               <folding>
                 <element signature="e#116#189#0" expanded="true" />
                 <element signature="n#!!block;n#handleMenuClickLogedUser#0;n#App#0" />
                 <element signature="n#!!block;n#handleMenuClickNeedToLogIn#0;n#App#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/auth/middleware.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -214,36 +200,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/edit/</find>
-      <find>res.redirect(</find>
-      <find>You ha</find>
-      <find>accessTokenNull</find>
-      <find>PictureCompo</find>
-      <find>checkPicture5</find>
-      <find>this.state.serverports.leng</find>
-      <find>ACCES</find>
-      <find>token je</find>
-      <find>registerToLoginPopUp</find>
-      <find>user/me</find>
-      <find>accessToken</find>
-      <find>loginUser</find>
-      <find>onLogin</find>
-      <find>searchIcon</find>
-      <find>res.status(2</find>
-      <find>checkPictureComponent</find>
-      <find>check</find>
-      <find>numberOfRows</find>
-      <find>sendOneMoreToken</find>
-      <find>checkUsernameOrEmail</find>
-      <find>wrongTokenProps</find>
-      <find>getUserId</find>
-      <find>username</find>
-      <find>&quot;bbb</find>
-      <find>wrongToken</find>
-      <find>555</find>
-      <find>CONF</find>
       <find>ACCESS T</find>
       <find>wrongUsernameOrPassword</find>
+      <find>&quot;name</find>
+      <find>CreateCo</find>
+      <find>require('doten</find>
+      <find>require('dote</find>
+      <find>process.en</find>
+      <find>forgotPassword</find>
+      <find>receivedUserId</find>
+      <find>address</find>
+      <find>name</find>
+      <find>checkEmailOrUsername</find>
+      <find>.catch</find>
+      <find>res.data.succ</find>
+      <find>notification</find>
+      <find>decode</find>
+      <find>wrongTokenProps</find>
+      <find>forgotUserPassword</find>
+      <find>showResetTokenButton</find>
+      <find>readforgotPasswordToken</find>
+      <find>UPDATE</find>
+      <find>5s</find>
+      <find>wrongToken</find>
+      <find>messageToDisplay</find>
+      <find>confirmCorrectTokenProps</find>
+      <find>confirmAccessToken</find>
+      <find>&quot;user id</find>
+      <find>15</find>
+      <find>first</find>
+      <find>confirm</find>
     </findStrings>
     <replaceStrings>
       <replace>password</replace>
@@ -272,30 +258,34 @@
         <option value="$PROJECT_DIR$/server/auth/VerifyToken.js" />
         <option value="$PROJECT_DIR$/server/auth/AuthController.js" />
         <option value="$PROJECT_DIR$/src/user/login/Login.js" />
-        <option value="$PROJECT_DIR$/src/util/inputValidations.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" />
-        <option value="$PROJECT_DIR$/src/constants/index.js" />
         <option value="$PROJECT_DIR$/src/components/IndexComponent.js" />
         <option value="$PROJECT_DIR$/src/components/EditComponent.js" />
         <option value="$PROJECT_DIR$/src/util/PrivateRoute.js" />
         <option value="$PROJECT_DIR$/server/routes/ServerPortRoutes.js" />
         <option value="$PROJECT_DIR$/src/util/common.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/server/auth/middleware.js" />
         <option value="$PROJECT_DIR$/server/database/DB_Pepac.js" />
-        <option value="$PROJECT_DIR$/src/user/signup/SignupComponent.js" />
         <option value="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" />
         <option value="$PROJECT_DIR$/src/components/PictureComponent.js" />
         <option value="$PROJECT_DIR$/server/dotenv-example.js" />
         <option value="$PROJECT_DIR$/server/dotenv-example.env" />
         <option value="$PROJECT_DIR$/server/aa.env" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/server/.env" />
-        <option value="$PROJECT_DIR$/server/routes/users.js" />
-        <option value="$PROJECT_DIR$/src/user/login/LoginComponent.js" />
         <option value="$PROJECT_DIR$/src/components/CreateComponent.js" />
+        <option value="$PROJECT_DIR$/server/.env" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/src/user/ForgotPassword/ForgotPasswordComponent.js" />
+        <option value="$PROJECT_DIR$/src/constants/index.js" />
+        <option value="$PROJECT_DIR$/src/util/inputValidations.js" />
+        <option value="$PROJECT_DIR$/src/user/signup/SignupComponent.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" />
+        <option value="$PROJECT_DIR$/src/user/login/LoginComponent.js" />
+        <option value="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" />
+        <option value="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" />
+        <option value="$PROJECT_DIR$/server/routes/users.js" />
       </list>
     </option>
   </component>
@@ -368,18 +358,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="signup" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548253848517" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548329992187" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-s-alert-demo-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -596,18 +605,26 @@
       <workItem from="1548252264226" duration="1336000" />
       <workItem from="1548253927942" duration="814000" />
       <workItem from="1548255811955" duration="695000" />
-      <workItem from="1548318775517" duration="659000" />
+      <workItem from="1548318775517" duration="1770000" />
+      <workItem from="1548320863350" duration="1767000" />
+      <workItem from="1548322750500" duration="1299000" />
+      <workItem from="1548324626830" duration="1094000" />
+      <workItem from="1548326435400" duration="1683000" />
+      <workItem from="1548328276309" duration="1758000" />
+      <workItem from="1548330091218" duration="1754000" />
+      <workItem from="1548331909825" duration="1749000" />
+      <workItem from="1548333707395" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226336000" />
+    <option name="totallyTimeSpent" value="239498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.29498714" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.32647815" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.36568123" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -650,22 +667,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>303</line>
+          <line>480</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>309</line>
+          <line>486</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>308</line>
+          <line>485</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>317</line>
+          <line>494</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -673,24 +690,26 @@
           <line>34</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>120</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>194</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>193</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="2475" lean-forward="true" selection-start-line="2460" selection-start-column="2" selection-end-line="2475" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LoadingIndicatorBesideElement.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -717,13 +736,6 @@
     <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/config/db.config.js" />
     <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/config/config.js" />
     <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/server.js" />
-    <entry file="file://$PROJECT_DIR$/src/util/inputValidations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/HashRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -759,13 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="29" column="28" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -830,24 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/database/DB_Pepac.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/signup/SignupComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -878,20 +869,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
+    <entry file="file://$PROJECT_DIR$/server/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/.env">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="24" selection-end-line="112" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/signup/SignupComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="140" column="44" lean-forward="true" selection-start-line="140" selection-start-column="44" selection-end-line="140" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/inputValidations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="236" column="36" selection-start-line="236" selection-start-column="36" selection-end-line="236" selection-end-column="36" />
+        <state relative-caret-position="3026">
+          <caret line="278" column="92" selection-start-line="278" selection-start-column="92" selection-end-line="278" selection-end-column="92" />
           <folding>
             <element signature="e#116#189#0" expanded="true" />
             <element signature="n#!!block;n#handleMenuClickLogedUser#0;n#App#0" />
@@ -900,49 +937,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/auth/middleware.js">
+    <entry file="file://$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="425">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/users.js">
+    <entry file="file://$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="187" column="17" lean-forward="true" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
-          <folding>
-            <element signature="e#319#1638#0" />
-            <element signature="e#1698#2346#0" />
-            <element signature="e#2444#2512#0" />
-            <element signature="e#2594#3802#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="319">
+          <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/login/LoginComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="164" column="41" lean-forward="true" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="41" />
+        <state relative-caret-position="294">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#4091#4171#0" />
-            <element signature="e#4197#4277#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        <state relative-caret-position="77">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
+          <folding>
+            <element signature="e#319#1638#0" />
+            <element signature="e#3833#4735#0" />
+          </folding>
         </state>
       </provider>
     </entry>

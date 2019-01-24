@@ -127,7 +127,7 @@ export default class SignupComponent extends Component {
 
 
         let getButtonClickAllowed = "";
-        if( validateUsername(this.state.username) === "" && validateEmail(this.state.email)
+        if( validateUsername(this.state.username) === "" && validateEmail(this.state.email) === ""
            && validatePassword(this.state.password) === "" && this.state.loading === false
            && this.state.checkEmailOrUsername < 1) {
 

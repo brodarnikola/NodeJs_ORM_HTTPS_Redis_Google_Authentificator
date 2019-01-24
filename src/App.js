@@ -22,9 +22,11 @@ import axios from "axios";
 import LoadingIndicatorCenter from "./components/LoadingIndicatorCenter";
 import {ACCESS_TOKEN, CURRENT_USER} from "./constants";
 import PictureComponent from "./components/PictureComponent";
-import ConfirmationTokenComponent from "./user/ConfirmationToken/ConfirmationTokenComponent";
+import ConfirmationTokenComponent from "./user/confirmationToken/ConfirmationTokenComponent";
+import ForgotPasswordComponent from "./user/forgotPassword/ForgotPasswordComponent";
 
 import PrivateRoute from './util/PrivateRoute';
+import ChangePasswordComponent from "./user/changePassword/ChangePasswordComponent";
 
 
 class App extends Component {
@@ -271,6 +273,10 @@ class App extends Component {
                         <Route path='/signup' render={(props) => <SignupComponent
                             passClick={this.handleMenuClickNeedToLogIn}  {...props}  />}/>
                         <Route path='/confirmation/:token' render={(props) => <ConfirmationTokenComponent
+                            passClick={this.handleMenuClickNeedToLogIn}  {...props}  />}/>
+                        <Route path='/forgotPassword' render={(props) => <ForgotPasswordComponent
+                            passClick={this.handleMenuClickNeedToLogIn}  {...props}  />}/>
+                        <Route path='/changePassword/:token?' render={(props) => <ChangePasswordComponent
                             passClick={this.handleMenuClickNeedToLogIn}  {...props}  />}/>
 
                         <Route path='/index' render={(props) => <IndexComponent

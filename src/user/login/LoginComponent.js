@@ -27,7 +27,9 @@ export default class LoginComponent extends Component {
             showResetTokenButton: 0,
             confirmAccessToken: 0,
             sendOneMoreToken: 0,
-            receivedUserId: 0
+            receivedUserId: 0,
+            expiredPasswordRecoveryToken: 0,
+            messageToDisplay: ''
         }
     }
 
@@ -88,13 +90,32 @@ export default class LoginComponent extends Component {
             else if (this.props.location.state.confirmCorrectTokenProps === 1) {
 
                 this.setState({
-                    confirmAccessToken: 1
+                    confirmAccessToken: 1,
+                    messageToDisplay: this.props.location.state.messageToDisplayProps
                 })
 
                 const history = createHistory();
                 if (history.location && history.location.state && history.location.state.confirmCorrectTokenProps) {
                     const state = {...history.location.state};
                     delete state.confirmCorrectTokenProps;
+                    history.replace({...history.location, state});
+                }
+                if (history.location && history.location.state && history.location.state.messageToDisplayProps) {
+                    const state = {...history.location.state};
+                    delete state.confirmCorrectTokenProps;
+                    history.replace({...history.location, state});
+                }
+            }
+            else if (this.props.location.state.passwordRecoveryTokenExpired === 1) {
+
+                this.setState({
+                    expiredPasswordRecoveryToken: 1
+                })
+
+                const history = createHistory();
+                if (history.location && history.location.state && history.location.state.passwordRecoveryTokenExpired) {
+                    const state = {...history.location.state};
+                    delete state.passwordRecoveryTokenExpired;
                     history.replace({...history.location, state});
                 }
             }
@@ -237,9 +258,15 @@ export default class LoginComponent extends Component {
 
                         <p className="popUpWrongResponse">Something went wrong with your token. Please try to send one more token </p>
                     }
+                    {this.state.expiredPasswordRecoveryToken === 1 &&
+
+                        <p className="popUpWrongResponse">Your token for password recovery has been expired. Please try to send one more token </p>
+                    }
+
+                    {/* <p className="popUpCorrectResponse">You have successfully confirmed your link. Now you can login </p> */}
                     {this.state.confirmAccessToken === 1 &&
 
-                        <p className="popUpCorrectResponse">You have successfully confirmed your link. Now you can login </p>
+                        <p className="popUpCorrectResponse"> {this.state.messageToDisplay} </p>
                     }
                 </div>
                 <form onSubmit={this.onSubmit}>
@@ -265,7 +292,7 @@ export default class LoginComponent extends Component {
                         }
                         {this.state.showResetTokenButton === 1 &&
 
-                            <input type="button"  value=" Send token" className="button_allowed"
+                            <input type="button"  value="Send token" className="button_allowed"
                                    onClick={this.sendOneMoreTokenFunction.bind(this)}  />
                         }
                         {this.state.sendOneMoreToken === 1 &&
@@ -273,6 +300,10 @@ export default class LoginComponent extends Component {
                             <p style={{color: "#007bff"}}>We have successfully send you one more token.
                             Please confirm to login. </p>
                         }
+                        <p style={{marginTop: "15px"}}>
+                            Forgot your password?
+                            <a href={"/forgotPassword"}> Click here for recovery it </a>
+                        </p>
                     </div>
                 </form>
             </div>
