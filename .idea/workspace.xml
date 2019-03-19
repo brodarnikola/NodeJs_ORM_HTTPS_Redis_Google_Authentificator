@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/server/routes/users.js" line="271" />
+    <bookmark url="file://$PROJECT_DIR$/server/routes/usersORM.js" line="190" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81e65afa-4b3e-4736-ad9a-5d86ac048c03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/sequelize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/localhost2/ca.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/localhost3/certificate.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/localhost3/privatekey.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/customers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/roles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/AdminRoutesORM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/usersORM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ConfirmLoginComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/.rnd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/cert.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/client-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/client-key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/client.csr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/make-cert.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localhost/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weather/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weather/stateless_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weather/stateless_weather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weather/titles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weather/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/DatabaseFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/ServerPortRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/AdminRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/ForgotPassword/ForgotPasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IndexComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IndexComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PictureComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PictureComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/login/LoginComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/inputValidations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/inputValidations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,34 +63,34 @@
     <session id="-1061149401">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="159" />
+          <entry key="project.closed" value="192" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="7" />
-          <entry key="project.open.time.15" value="6" />
-          <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="11" />
-          <entry key="project.open.time.18" value="13" />
-          <entry key="project.open.time.19" value="10" />
+          <entry key="project.open.time.15" value="7" />
+          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.17" value="15" />
+          <entry key="project.open.time.18" value="14" />
+          <entry key="project.open.time.19" value="14" />
           <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.20" value="6" />
-          <entry key="project.open.time.21" value="7" />
-          <entry key="project.open.time.22" value="5" />
+          <entry key="project.open.time.20" value="9" />
+          <entry key="project.open.time.21" value="9" />
+          <entry key="project.open.time.22" value="9" />
           <entry key="project.open.time.23" value="2" />
-          <entry key="project.open.time.24" value="4" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.24" value="5" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="5" />
-          <entry key="project.open.time.27" value="8" />
+          <entry key="project.open.time.27" value="11" />
           <entry key="project.open.time.28" value="6" />
-          <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.30" value="5" />
-          <entry key="project.open.time.31" value="6" />
+          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.30" value="6" />
+          <entry key="project.open.time.31" value="8" />
           <entry key="project.open.time.32" value="5" />
-          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.33" value="3" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="3" />
           <entry key="project.open.time.37" value="2" />
@@ -63,12 +100,12 @@
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="160" />
+          <entry key="project.opened" value="192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="160" />
+          <entry key="ESLintLanguageService" value="192" />
           <entry key="TypeScriptServerServiceImpl" value="3" />
         </counts>
       </usages-collector>
@@ -78,13 +115,16 @@
           <entry key="371" value="2" />
           <entry key="372" value="1" />
           <entry key="589" value="1" />
+          <entry key="729" value="1" />
+          <entry key="760" value="1" />
           <entry key="css" value="13" />
           <entry key="env" value="4" />
           <entry key="html" value="1" />
-          <entry key="js" value="228" />
+          <entry key="js" value="303" />
           <entry key="json" value="2" />
           <entry key="png" value="2" />
           <entry key="scss" value="3" />
+          <entry key="sql" value="1" />
           <entry key="ts" value="5" />
         </counts>
       </usages-collector>
@@ -94,9 +134,10 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="233" />
+          <entry key="JavaScript" value="310" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="3" />
+          <entry key="SQL" value="1" />
           <entry key="TypeScript" value="5" />
         </counts>
       </usages-collector>
@@ -105,7 +146,7 @@
           <entry key="css" value="244" />
           <entry key="dummy" value="21" />
           <entry key="env" value="43" />
-          <entry key="js" value="23469" />
+          <entry key="js" value="28569" />
           <entry key="json" value="25" />
         </counts>
       </usages-collector>
@@ -114,9 +155,167 @@
           <entry key=".env file" value="38" />
           <entry key="CSS" value="244" />
           <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="23468" />
+          <entry key="JavaScript" value="28568" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-163971121">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="75" />
+          <entry key="project.open.time.14" value="7" />
+          <entry key="project.open.time.15" value="8" />
+          <entry key="project.open.time.16" value="10" />
+          <entry key="project.open.time.17" value="7" />
+          <entry key="project.open.time.18" value="9" />
+          <entry key="project.open.time.19" value="5" />
+          <entry key="project.open.time.20" value="7" />
+          <entry key="project.open.time.21" value="5" />
+          <entry key="project.open.time.22" value="4" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="4" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.opened" value="75" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="69" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="695" value="1" />
+          <entry key="727" value="1" />
+          <entry key="729" value="1" />
+          <entry key="conf" value="4" />
+          <entry key="crt" value="1" />
+          <entry key="env" value="2" />
+          <entry key="gitignore" value="1" />
+          <entry key="hosts" value="1" />
+          <entry key="js" value="61" />
+          <entry key="json" value="5" />
+          <entry key="key" value="1" />
+          <entry key="ts" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="2" />
+          <entry key="HOCON" value="4" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="64" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="TypeScript" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="conf" value="60" />
+          <entry key="env" value="14" />
+          <entry key="hosts" value="1" />
+          <entry key="js" value="9958" />
+          <entry key="json" value="10" />
+          <entry key="md" value="4" />
+          <entry key="ts" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="14" />
+          <entry key="HOCON" value="60" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="9958" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="TypeScript" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-204731880">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="58" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="5" />
+          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.19" value="5" />
+          <entry key="project.open.time.20" value="8" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="5" />
+          <entry key="project.open.time.23" value="5" />
+          <entry key="project.open.time.24" value="3" />
+          <entry key="project.open.time.25" value="5" />
+          <entry key="project.open.time.26" value="5" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="59" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="conf" value="26" />
+          <entry key="env" value="4" />
+          <entry key="js" value="1967" />
+          <entry key="json" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="4" />
+          <entry key="HOCON" value="26" />
+          <entry key="JSON" value="35" />
+          <entry key="JavaScript" value="1967" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cert" value="1" />
+          <entry key="conf" value="9" />
+          <entry key="crt" value="4" />
+          <entry key="csr" value="5" />
+          <entry key="css" value="1" />
+          <entry key="env" value="7" />
+          <entry key="gitignore" value="2" />
+          <entry key="hosts" value="2" />
+          <entry key="js" value="81" />
+          <entry key="json" value="5" />
+          <entry key="key" value="5" />
+          <entry key="pem" value="39" />
+          <entry key="sql" value="2" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="7" />
+          <entry key="CSS" value="1" />
+          <entry key="HOCON" value="9" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="81" />
+          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="SQL" value="2" />
+          <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -124,67 +323,108 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/login/LoginComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
+            <state relative-caret-position="-112">
+              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/routes/usersORM.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1843">
+              <caret line="264" column="36" selection-start-line="264" selection-start-column="27" selection-end-line="264" selection-end-column="36" />
+              <folding>
+                <element signature="e#2718#3034#0" />
+                <element signature="e#3109#4491#0" />
+                <element signature="e#4555#5719#0" />
+                <element signature="e#5776#6553#0" />
+                <element signature="n#!!block;n#loginUser#0" />
+                <element signature="e#12537#15407#0" />
+                <element signature="e#15509#16674#0" />
+                <element signature="e#16744#18327#0" />
+                <element signature="n#!!block;n#printValueA#0" />
+                <element signature="e#19925#22436#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/proba_orm.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-612" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/pepac.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3196">
+              <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#componentWillMount#0;n#CreateComponent#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#CreateComponent#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/EditComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+              <folding>
+                <element signature="n#!!block;n#componentDidMount#0;n#EditComponent#0" />
+                <element signature="n#!!block;n#onChangeHostName#0;n#EditComponent#0" />
+                <element signature="n#!!block;n#onChangePort#0;n#EditComponent#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/AdminRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#1543#3164#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
-              <folding>
-                <element signature="e#319#1638#0" />
-                <element signature="e#3833#4735#0" />
-              </folding>
-            </state>
+            <state relative-caret-position="-4182" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js">
+        <entry file="file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3026">
-              <caret line="278" column="92" selection-start-line="278" selection-start-column="92" selection-end-line="278" selection-end-column="92" />
-              <folding>
-                <element signature="e#116#189#0" expanded="true" />
-                <element signature="n#!!block;n#handleMenuClickLogedUser#0;n#App#0" />
-                <element signature="n#!!block;n#handleMenuClickNeedToLogIn#0;n#App#0" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -200,36 +440,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ACCESS T</find>
-      <find>wrongUsernameOrPassword</find>
-      <find>&quot;name</find>
-      <find>CreateCo</find>
-      <find>require('doten</find>
-      <find>require('dote</find>
-      <find>process.en</find>
-      <find>forgotPassword</find>
-      <find>receivedUserId</find>
-      <find>address</find>
-      <find>name</find>
-      <find>checkEmailOrUsername</find>
-      <find>.catch</find>
-      <find>res.data.succ</find>
-      <find>notification</find>
-      <find>decode</find>
-      <find>wrongTokenProps</find>
-      <find>forgotUserPassword</find>
-      <find>showResetTokenButton</find>
-      <find>readforgotPasswordToken</find>
-      <find>UPDATE</find>
-      <find>5s</find>
-      <find>wrongToken</find>
-      <find>messageToDisplay</find>
-      <find>confirmCorrectTokenProps</find>
-      <find>confirmAccessToken</find>
-      <find>&quot;user id</find>
-      <find>15</find>
-      <find>first</find>
-      <find>confirm</find>
+      <find>dotenv</find>
+      <find>do</find>
+      <find>signUp</find>
+      <find>se</find>
+      <find>bcrypt</find>
+      <find>loginUse</find>
+      <find>login</find>
+      <find>CreateC</find>
+      <find>/checkPictureComponen</find>
+      <find>X/NZPybBl6iRU</find>
+      <find>clientCert</find>
+      <find>getWeather</find>
+      <find>log</find>
+      <find>loadWeather</find>
+      <find>{label: 'Weather', link: '/weat</find>
+      <find>passClickLogedUser</find>
+      <find>onChangeCustomerName</find>
+      <find>encoding: 'base32',</find>
+      <find>index</find>
+      <find>reloadDataAfterDelete</find>
+      <find>checkPictureComponent</find>
+      <find>Add c</find>
+      <find>QR_CODE_ENABLED</find>
+      <find>Login</find>
+      <find>user/me</find>
+      <find>ConfirmLoginComponent</find>
+      <find>currentUser</find>
+      <find>passClick</find>
+      <find>loginUser</find>
+      <find>onLogin</find>
     </findStrings>
     <replaceStrings>
       <replace>password</replace>
@@ -242,50 +482,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server/database/DatabaseFunctions.js" />
-        <option value="$PROJECT_DIR$/server/database/DB.js" />
-        <option value="$PROJECT_DIR$/src/util/APIUtils.js" />
-        <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/AppBootstrapMenu.js" />
-        <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/EpicMenu.css" />
-        <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/EpicMenu.js" />
-        <option value="$PROJECT_DIR$/src/components/LoadingIndicator.js" />
-        <option value="$PROJECT_DIR$/src/components/LoadingIndicatorCenter.js" />
-        <option value="$PROJECT_DIR$/src/components/LoadingIndicatorBesideElement.js" />
-        <option value="$PROJECT_DIR$/src/components/TableRow.js" />
-        <option value="$PROJECT_DIR$/src/user/signup/Signup.js" />
-        <option value="$PROJECT_DIR$/server/auth/config.js" />
-        <option value="$PROJECT_DIR$/server/auth/VerifyToken.js" />
-        <option value="$PROJECT_DIR$/server/auth/AuthController.js" />
-        <option value="$PROJECT_DIR$/src/user/login/Login.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" />
-        <option value="$PROJECT_DIR$/src/components/IndexComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/EditComponent.js" />
         <option value="$PROJECT_DIR$/src/util/PrivateRoute.js" />
-        <option value="$PROJECT_DIR$/server/routes/ServerPortRoutes.js" />
         <option value="$PROJECT_DIR$/src/util/common.css" />
-        <option value="$PROJECT_DIR$/server/auth/middleware.js" />
         <option value="$PROJECT_DIR$/server/database/DB_Pepac.js" />
         <option value="$PROJECT_DIR$/src/user/ConfirmationToken/ConfirmationTokenComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/PictureComponent.js" />
         <option value="$PROJECT_DIR$/server/dotenv-example.js" />
         <option value="$PROJECT_DIR$/server/dotenv-example.env" />
         <option value="$PROJECT_DIR$/server/aa.env" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/components/CreateComponent.js" />
-        <option value="$PROJECT_DIR$/server/.env" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/src/user/ForgotPassword/ForgotPasswordComponent.js" />
         <option value="$PROJECT_DIR$/src/constants/index.js" />
         <option value="$PROJECT_DIR$/src/util/inputValidations.js" />
-        <option value="$PROJECT_DIR$/src/user/signup/SignupComponent.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" />
-        <option value="$PROJECT_DIR$/src/user/login/LoginComponent.js" />
         <option value="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" />
         <option value="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" />
+        <option value="$PROJECT_DIR$/server/models/blog.js" />
+        <option value="$PROJECT_DIR$/server/models/tag.js" />
+        <option value="$PROJECT_DIR$/server/models/user.js" />
+        <option value="$PROJECT_DIR$/server/models/user_roles.js" />
+        <option value="$PROJECT_DIR$/src/user/signup/SignupComponent.js" />
+        <option value="$PROJECT_DIR$/server/models/roles.js" />
         <option value="$PROJECT_DIR$/server/routes/users.js" />
+        <option value="$PROJECT_DIR$/server/auth/middleware.js" />
+        <option value="$PROJECT_DIR$/src/components/PictureComponent.js" />
+        <option value="$PROJECT_DIR$/server/routes/ServerPortRoutes.js" />
+        <option value="$PROJECT_DIR$/src/components/TableRow.js" />
+        <option value="$PROJECT_DIR$/src/components/ConfirmLogin.js" />
+        <option value="$PROJECT_DIR$/src/components/ChosseLoginComponent.js" />
+        <option value="$PROJECT_DIR$/server/models/users.js" />
+        <option value="$PROJECT_DIR$/server/routes/AdminRoutes.js" />
+        <option value="$PROJECT_DIR$/src/components/EditComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/CreateComponent.js" />
+        <option value="C:/Windows/System32/drivers/etc/hosts" />
+        <option value="C:/xampp/apache/conf/extra/httpd-vhosts.conf" />
+        <option value="$PROJECT_DIR$/src/components/IndexComponent.js" />
+        <option value="C:/xampp/apache/crt/cert.conf" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="C:/xampp/apache/conf/extra/httpd-xampp.conf" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/probnaDatoteka.js" />
+        <option value="$PROJECT_DIR$/src/components/ConfirmLoginComponent.js" />
+        <option value="$PROJECT_DIR$/src/localhost2/cert.conf" />
+        <option value="$PROJECT_DIR$/src/localhost2/server.conf" />
+        <option value="$PROJECT_DIR$/server/bin/www.js" />
+        <option value="$PROJECT_DIR$/server/database/sequelize.js" />
+        <option value="$PROJECT_DIR$/src/user/login/LoginComponent.js" />
+        <option value="$PROJECT_DIR$/server/.env" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/routes/usersORM.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" />
+        <option value="$PROJECT_DIR$/src/components/WeatherComponent.js" />
       </list>
     </option>
   </component>
@@ -321,75 +568,86 @@
         <subPane>
           <expand>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="localhost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="localhost2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="localhost3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-express-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-express-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548329992187" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-s-alert-demo-master" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553021520752" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Weather-Scanner-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\node_modules\eslint" />
@@ -400,14 +658,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\server" />
       <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\src\images" />
-      <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\src\util" />
-      <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\src\user\signup" />
-      <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\src\components" />
-      <recent name="C:\Users\Brc\Desktop\NodeJS\react-express-tutorial\src\veryGoodNonUsedComponents" />
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\src\weather" />
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\server\localhost3" />
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\server\localhost2" />
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\src\localhost2" />
+      <recent name="C:\Users\Brc\Desktop\NodeJs\react-express-advanced\aa\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -613,18 +872,183 @@
       <workItem from="1548328276309" duration="1758000" />
       <workItem from="1548330091218" duration="1754000" />
       <workItem from="1548331909825" duration="1749000" />
-      <workItem from="1548333707395" duration="947000" />
+      <workItem from="1548333707395" duration="1662000" />
+      <workItem from="1548499104447" duration="712000" />
+      <workItem from="1548504816669" duration="1516000" />
+      <workItem from="1548506644435" duration="1751000" />
+      <workItem from="1548508456477" duration="1775000" />
+      <workItem from="1548510268960" duration="292000" />
+      <workItem from="1548582681783" duration="2019000" />
+      <workItem from="1548584908038" duration="1770000" />
+      <workItem from="1548586725584" duration="1764000" />
+      <workItem from="1548588537937" duration="1769000" />
+      <workItem from="1548590353158" duration="1434000" />
+      <workItem from="1548602812125" duration="1771000" />
+      <workItem from="1548604627019" duration="1711000" />
+      <workItem from="1548662151165" duration="1768000" />
+      <workItem from="1548663978025" duration="2126000" />
+      <workItem from="1548682122472" duration="587000" />
+      <workItem from="1549271670574" duration="657000" />
+      <workItem from="1549299035346" duration="946000" />
+      <workItem from="1549300841913" duration="267000" />
+      <workItem from="1549374352898" duration="1772000" />
+      <workItem from="1549376350664" duration="1768000" />
+      <workItem from="1549378169528" duration="1900000" />
+      <workItem from="1549380128846" duration="1990000" />
+      <workItem from="1549382163381" duration="1768000" />
+      <workItem from="1549384009005" duration="1482000" />
+      <workItem from="1549385828628" duration="1748000" />
+      <workItem from="1549387629386" duration="1807000" />
+      <workItem from="1549389491571" duration="1949000" />
+      <workItem from="1549391539086" duration="1774000" />
+      <workItem from="1549394335378" duration="1542000" />
+      <workItem from="1549438760816" duration="1760000" />
+      <workItem from="1549440565676" duration="722000" />
+      <workItem from="1549444048563" duration="1445000" />
+      <workItem from="1549874003813" duration="530000" />
+      <workItem from="1549985006802" duration="1790000" />
+      <workItem from="1549986842577" duration="1134000" />
+      <workItem from="1549988650747" duration="1773000" />
+      <workItem from="1549990496875" duration="1773000" />
+      <workItem from="1549992311324" duration="1601000" />
+      <workItem from="1550325965031" duration="1774000" />
+      <workItem from="1550327802037" duration="1769000" />
+      <workItem from="1550329622480" duration="1196000" />
+      <workItem from="1550396852456" duration="1606000" />
+      <workItem from="1550398658462" duration="1771000" />
+      <workItem from="1550400472333" duration="1071000" />
+      <workItem from="1550590877723" duration="1787000" />
+      <workItem from="1550592707426" duration="1775000" />
+      <workItem from="1550594536504" duration="1911000" />
+      <workItem from="1550599590663" duration="1841000" />
+      <workItem from="1550601500925" duration="1769000" />
+      <workItem from="1550603311270" duration="748000" />
+      <workItem from="1550683509029" duration="597000" />
+      <workItem from="1550685324707" duration="1050000" />
+      <workItem from="1550692208670" duration="1847000" />
+      <workItem from="1550694148159" duration="849000" />
+      <workItem from="1550773005431" duration="1766000" />
+      <workItem from="1550774812903" duration="1771000" />
+      <workItem from="1550776638364" duration="1173000" />
+      <workItem from="1551118114138" duration="1803000" />
+      <workItem from="1551119980620" duration="1833000" />
+      <workItem from="1551121862650" duration="1062000" />
+      <workItem from="1551194442964" duration="848000" />
+      <workItem from="1551196258484" duration="1512000" />
+      <workItem from="1551198687104" duration="596000" />
+      <workItem from="1551200966589" duration="881000" />
+      <workItem from="1551202790401" duration="598000" />
+      <workItem from="1551205167469" duration="264000" />
+      <workItem from="1551208890956" duration="594000" />
+      <workItem from="1551462342514" duration="1767000" />
+      <workItem from="1551464152432" duration="1773000" />
+      <workItem from="1551465965699" duration="417000" />
+      <workItem from="1551516238960" duration="1798000" />
+      <workItem from="1551518107748" duration="1519000" />
+      <workItem from="1551519924837" duration="1768000" />
+      <workItem from="1551521730089" duration="1483000" />
+      <workItem from="1551523850998" duration="1563000" />
+      <workItem from="1551525673112" duration="1254000" />
+      <workItem from="1551527484732" duration="1771000" />
+      <workItem from="1551529305566" duration="725000" />
+      <workItem from="1551531122459" duration="1773000" />
+      <workItem from="1551532935217" duration="1351000" />
+      <workItem from="1551608102116" duration="1751000" />
+      <workItem from="1551609905634" duration="1759000" />
+      <workItem from="1551611712366" duration="1530000" />
+      <workItem from="1551615843622" duration="1466000" />
+      <workItem from="1551617681459" duration="1794000" />
+      <workItem from="1551619517330" duration="1774000" />
+      <workItem from="1551621338941" duration="1790000" />
+      <workItem from="1551628188143" duration="1786000" />
+      <workItem from="1551630015243" duration="1773000" />
+      <workItem from="1551631829279" duration="1856000" />
+      <workItem from="1551633977656" duration="1783000" />
+      <workItem from="1551635851838" duration="1773000" />
+      <workItem from="1551637794766" duration="401000" />
+      <workItem from="1551680599542" duration="1757000" />
+      <workItem from="1551682403039" duration="609000" />
+      <workItem from="1551688425876" duration="163000" />
+      <workItem from="1551720758173" duration="1763000" />
+      <workItem from="1551722787989" duration="1765000" />
+      <workItem from="1551725753559" duration="1451000" />
+      <workItem from="1551727586854" duration="268000" />
+      <workItem from="1551801872903" duration="1182000" />
+      <workItem from="1551803191297" duration="1813000" />
+      <workItem from="1551805099905" duration="1702000" />
+      <workItem from="1551806969246" duration="874000" />
+      <workItem from="1551812298072" duration="1683000" />
+      <workItem from="1551814232764" duration="1904000" />
+      <workItem from="1551817498745" duration="879000" />
+      <workItem from="1551818428332" duration="1763000" />
+      <workItem from="1551820238960" duration="1913000" />
+      <workItem from="1551892530267" duration="1244000" />
+      <workItem from="1551894341934" duration="1519000" />
+      <workItem from="1551896188344" duration="1375000" />
+      <workItem from="1551979020856" duration="2067000" />
+      <workItem from="1551982214335" duration="1125000" />
+      <workItem from="1552025659182" duration="1766000" />
+      <workItem from="1552027474060" duration="1222000" />
+      <workItem from="1552116468715" duration="1719000" />
+      <workItem from="1552124947991" duration="1977000" />
+      <workItem from="1552137218511" duration="8000" />
+      <workItem from="1552144656934" duration="1724000" />
+      <workItem from="1552148081154" duration="1769000" />
+      <workItem from="1552149893211" duration="779000" />
+      <workItem from="1552205617410" duration="1601000" />
+      <workItem from="1552207460140" duration="1798000" />
+      <workItem from="1552209305804" duration="697000" />
+      <workItem from="1552212204758" duration="1360000" />
+      <workItem from="1552214031262" duration="1460000" />
+      <workItem from="1552215882395" duration="1169000" />
+      <workItem from="1552224423780" duration="629000" />
+      <workItem from="1552225113544" duration="1759000" />
+      <workItem from="1552226967005" duration="1770000" />
+      <workItem from="1552228793256" duration="1680000" />
+      <workItem from="1552326303624" duration="1748000" />
+      <workItem from="1552328105245" duration="1777000" />
+      <workItem from="1552329995712" duration="1497000" />
+      <workItem from="1552724141944" duration="1614000" />
+      <workItem from="1552725951580" duration="1659000" />
+      <workItem from="1552728899247" duration="1562000" />
+      <workItem from="1552730729536" duration="1084000" />
+      <workItem from="1552732562731" duration="599000" />
+      <workItem from="1552734441476" duration="591000" />
+      <workItem from="1552736231434" duration="1761000" />
+      <workItem from="1552738053916" duration="1514000" />
+      <workItem from="1552739875441" duration="1470000" />
+      <workItem from="1552741689194" duration="597000" />
+      <workItem from="1552743818640" duration="1478000" />
+      <workItem from="1552745357577" duration="600000" />
+      <workItem from="1552808106016" duration="599000" />
+      <workItem from="1552810569164" duration="930000" />
+      <workItem from="1552812487962" duration="741000" />
+      <workItem from="1552814307038" duration="596000" />
+      <workItem from="1552818323206" duration="725000" />
+      <workItem from="1552820144219" duration="576000" />
+      <workItem from="1552820821656" duration="1766000" />
+      <workItem from="1552822641259" duration="374000" />
+      <workItem from="1552832453412" duration="1748000" />
+      <workItem from="1552834249222" duration="1766000" />
+      <workItem from="1552836062215" duration="1131000" />
+      <workItem from="1552894038476" duration="527000" />
+      <workItem from="1552894794430" duration="1051000" />
+      <workItem from="1552906734388" duration="1764000" />
+      <workItem from="1552908580949" duration="674000" />
+      <workItem from="1552911522336" duration="967000" />
+      <workItem from="1553019200025" duration="1753000" />
+      <workItem from="1553021016036" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239498000" />
+    <option name="totallyTimeSpent" value="466585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.32647815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.18251929" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.36568123" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -634,8 +1058,8 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871014" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22052705" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2746186" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2773925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36477116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -667,28 +1091,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>480</line>
+          <line>448</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>486</line>
+          <line>454</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>485</line>
+          <line>453</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>494</line>
+          <line>462</line>
           <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/auth/middleware.js</url>
-          <line>34</line>
-          <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
@@ -697,284 +1116,773 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>194</line>
+          <line>192</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/routes/users.js</url>
-          <line>193</line>
-          <properties lambdaOrdinal="-1" />
+          <line>191</line>
           <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>371</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>374</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>376</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>535</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>411</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>419</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/users.js</url>
+          <line>424</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>613</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>547</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>584</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>525</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>526</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>531</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>741</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>742</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>118</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>128</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>137</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>123</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>125</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>133</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>139</line>
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>79</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>81</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>91</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>95</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>746</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>747</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>147</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>148</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>153</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>155</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>157</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>162</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>163</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>166</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>167</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>36</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js</url>
+          <line>38</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>498</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>499</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>464</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>466</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>468</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>444</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>252</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>250</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>248</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>189</line>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>306</line>
+          <option name="timeStamp" value="392" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>307</line>
+          <option name="timeStamp" value="393" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>309</line>
+          <option name="timeStamp" value="394" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>659</line>
+          <option name="timeStamp" value="402" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>190</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>171</line>
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>177</line>
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>174</line>
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>182</line>
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>181</line>
+          <option name="timeStamp" value="463" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>176</line>
+          <option name="timeStamp" value="464" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>172</line>
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>199</line>
+          <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>198</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>197</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>206</line>
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>210</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>213</line>
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>215</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>216</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>217</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>219</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>394</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>390</line>
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>399</line>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>388</line>
+          <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>538</line>
+          <option name="timeStamp" value="505" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>459</line>
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>117</line>
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>124</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>125</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>113</line>
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>109</line>
+          <option name="timeStamp" value="527" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>133</line>
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>136</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>142</line>
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>140</line>
+          <option name="timeStamp" value="531" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>147</line>
+          <option name="timeStamp" value="532" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>118</line>
+          <option name="timeStamp" value="533" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>120</line>
+          <option name="timeStamp" value="534" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/routes/usersORM.js</url>
+          <line>406</line>
+          <option name="timeStamp" value="535" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/LoadingIndicatorBesideElement.js">
+    <entry file="file://$PROJECT_DIR$/server/localhost2/server-key.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost2/server-csr.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost2/server-crt.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost/client.csr">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost/client-key.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost/client-cert.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost/cert.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost2/certificate.pem" />
+    <entry file="file://$PROJECT_DIR$/server/localhost2/privatekeyAndroid.pem" />
+    <entry file="file://$PROJECT_DIR$/server/localhost3/localhost.cert" />
+    <entry file="file://$PROJECT_DIR$/server/localhost3/privatekey.pem">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/server/localhost3/certificate3.pem" />
+    <entry file="file://$PROJECT_DIR$/server/localhost3/privatekey3.pem" />
+    <entry file="file://C:/OpenSSL-Win64/bin/certrequest.csr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/localhost3/certificate.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/sequelize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weather/weather.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/DatabaseFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/model/user.model.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/config/env.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/controller/controller.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/router/verifySignUp.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/router/verifyJwtToken.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/router/router.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/config/db.config.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/app/config/config.js" />
-    <entry file="file://$PROJECT_DIR$/../Nodejs-JWT-Authentication/server.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/HashRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/history/es/index.js">
+    <entry file="file://$PROJECT_DIR$/src/weather/titles.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weather/stateless_weather.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weather/stateless_form.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="812" column="8" selection-start-line="812" selection-start-column="8" selection-end-line="812" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="436">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/signup/Signup.js">
+    <entry file="file://$PROJECT_DIR$/src/weather/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3638">
-          <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/IndexComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/components/WeatherComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TableRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/APIUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/PrivateRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/auth/VerifyToken.js" />
-    <entry file="file://$PROJECT_DIR$/server/auth/AuthController.js" />
-    <entry file="file://$PROJECT_DIR$/server/auth/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EditComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LoadingIndicatorCenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/search-icon.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/ServerPortRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3280">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/DB_Pepac.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PictureComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-app-rewired/bin/jest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/dotenv/lib/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/aa.env" />
-    <entry file="file://$PROJECT_DIR$/server/dotenv-example.js" />
-    <entry file="file://$PROJECT_DIR$/server/dotenv-example.env" />
-    <entry file="file://$PROJECT_DIR$/node_modules/dotenv/tests/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="24" selection-end-line="112" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/auth/middleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/signup/SignupComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="140" column="44" lean-forward="true" selection-start-line="140" selection-start-column="44" selection-end-line="140" selection-end-column="44" />
+        <state relative-caret-position="425">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="29" />
+        <state relative-caret-position="279">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/index.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/inputValidations.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TableRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="275">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/IndexComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-796">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PictureComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3026">
-          <caret line="278" column="92" selection-start-line="278" selection-start-column="92" selection-end-line="278" selection-end-column="92" />
+        <state relative-caret-position="3536">
+          <caret line="317" column="12" selection-start-line="317" selection-start-column="12" selection-end-line="317" selection-end-column="12" />
           <folding>
-            <element signature="e#116#189#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#componentDidMount#0;n#App#0" />
             <element signature="n#!!block;n#handleMenuClickLogedUser#0;n#App#0" />
-            <element signature="n#!!block;n#handleMenuClickNeedToLogIn#0;n#App#0" />
+            <element signature="n#!!block;n#handleLogout#0;n#App#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="3196">
+          <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#componentWillMount#0;n#CreateComponent#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#CreateComponent#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/components/EditComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
+        <state relative-caret-position="714">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!block;n#componentDidMount#0;n#EditComponent#0" />
+            <element signature="n#!!block;n#onChangeHostName#0;n#EditComponent#0" />
+            <element signature="n#!!block;n#onChangePort#0;n#EditComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ConfirmLoginComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="257" column="28" selection-start-line="257" selection-start-column="28" selection-end-line="257" selection-end-column="28" />
+          <folding>
+            <element signature="e#1562#4148#0" />
+            <element signature="e#5072#6120#0" />
+            <element signature="e#6155#6239#0" />
+            <element signature="e#6272#7172#0" />
+            <element signature="e#9197#9971#0" />
+            <element signature="e#10087#10522#0" />
+            <element signature="e#10639#11074#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/login/LoginComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        <state relative-caret-position="1258">
+          <caret line="162" column="42" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="42" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1326#5177#0" />
+            <element signature="e#7232#8760#0" />
+            <element signature="e#8817#9389#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/util/inputValidations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="636">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/DatabaseFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-843">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/DB_Pepac.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/AdminRoutesORM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#1543#3164#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
+        <state relative-caret-position="-4182" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/AdminRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/proba_orm.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pepac.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/usersORM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="264" column="36" selection-start-line="264" selection-start-column="27" selection-end-line="264" selection-end-column="36" />
           <folding>
-            <element signature="e#319#1638#0" />
-            <element signature="e#3833#4735#0" />
+            <element signature="e#2718#3034#0" />
+            <element signature="e#3109#4491#0" />
+            <element signature="e#4555#5719#0" />
+            <element signature="e#5776#6553#0" />
+            <element signature="n#!!block;n#loginUser#0" />
+            <element signature="e#12537#15407#0" />
+            <element signature="e#15509#16674#0" />
+            <element signature="e#16744#18327#0" />
+            <element signature="n#!!block;n#printValueA#0" />
+            <element signature="e#19925#22436#0" />
           </folding>
         </state>
       </provider>

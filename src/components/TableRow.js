@@ -14,15 +14,21 @@ class TableRow extends Component {
     }
 
     delete() {
-          axios.get('http://localhost:5000/delete/'+this.props.obj.id)
+          axios.get('https://localhost:5000/delete/'+this.props.obj.id)
             .then(
-                res  => console.log("Deleted")
-            )
-            .then(res =>
+                res  => {
 
-                this.props.reloadDataAfterDelete()
-                //setTimeout( () => { this.props.history.push('/index')  }, 10)
-            )
+                    if( res.data.success === true ) {
+                        console.log("Deleted")
+                        this.props.reloadDataAfterDelete()
+                    }
+                    else {
+                        console.log("Something went wrong when deleting user. please try again");
+                        console.log("Something went wrong when deleting user. please try again");
+                        console.log("Something went wrong when deleting user. please try again");
+                        console.log("Something went wrong when deleting user. please try again");
+                    }
+                })
             .catch(err => console.log(err))
     }
 

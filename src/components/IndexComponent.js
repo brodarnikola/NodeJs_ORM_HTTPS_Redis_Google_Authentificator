@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TableRow from './TableRow';
 import {withRouter} from "react-router-dom";
+import {ACCESS_TOKEN} from "../constants";
 
 class IndexComponent extends Component {
 
@@ -16,6 +17,18 @@ class IndexComponent extends Component {
         this.reloadDataAfterDeletingOneItem = this.reloadDataAfterDeletingOneItem.bind(this);
     }
 
+    componentWillMount() {
+
+        if ( localStorage.getItem(ACCESS_TOKEN) !== null  && localStorage.getItem(ACCESS_TOKEN) !== "undefined" ) {
+        }
+        else {
+
+            this.props.history.push({
+                pathname: '/login'
+            })
+        }
+    }
+
     componentDidMount(){
 
         // In App.js we have a function that draw orange menu indicator by index
@@ -23,11 +36,12 @@ class IndexComponent extends Component {
         this.props.passClick(menuOrangeIndicator);
         // I don't need to call here this  1)  let menuOrangeIndicator = 1;
         //  2)  this.props.passClick(menuOrangeIndicator);  ,,, because by default it calls this route
-        axios.get('http://localhost:5000/index')
+        axios.get('https://localhost:5000/index')
             .then(response => {
 
+                // that is for ORM sql query.. without that will be ===>  serverports: response.data
                 this.setState({
-                    serverports: response.data
+                    serverports: response.data.userArray
                 });
 
                 for (var i=0; i < this.state.serverports.length; i++) {

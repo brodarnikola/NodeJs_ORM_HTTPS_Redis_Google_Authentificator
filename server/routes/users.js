@@ -143,7 +143,6 @@ router.post('/readforgotPasswordToken/:token', async function (req, res, next) {
     } catch (error) {
         //res.send(new Error(error))
         //res.send(error);
-        //let getUserId = userId.id;
         //console.log("user id je: ==> " + userId.id);
 
         // TODO: If token has expired, then I want to send response, to user that token has expired
@@ -189,47 +188,12 @@ router.post('/updateUserPassword', async function (req, res, next) {
     } catch (error) {
         //res.send(new Error(error))
         //res.send(error);
-        //let getUserId = userId.id;
         //console.log("user id je: ==> " + userId.id);
         return res.json({
             success: false,
             message: 'User password did not successfully updated'
         });
     }
-
-    /* let sql = "SELECT id, username, password, email FROM users  WHERE username = '" + correctUsername
-        + "' AND password = '" + correctPassword + "' AND enabled = '1'";
-
-    try {
-
-        let result;
-        await pool.query(sql).then(rows => {
-            result = rows;
-        })
-
-        if (result) {
-            const JWTToken = jwt.sign({
-                    id: result[0].id
-                },
-                config.secret,
-                {
-                    expiresIn: '12h'  // 12 hours
-                });
-            return res.status(200).json({
-                success: true,  // 'Welcome to the JWT Auth'
-                token: JWTToken,
-                currentUser: result[0]
-            });
-        }
-
-        //console.log("result je: " + result[0].username + " aaaa: "  + result.toString()  + " ddd: " ++ result)
-        //res.send(result)
-    } catch (err) {
-
-        //console.log("loginUser da li ce uci 333" + err);
-        //throw new Error(err)
-        res.send(new Error(err))
-    } */
 });
 
 router.post('/user/me', async function (req, res, next) {
@@ -381,14 +345,18 @@ router.post('/signUpUser', async function (req, res, next) {
             },
         );
 
-        //res.send(result.affectedRows)
         // AKO ŽELIMO REDIREKTATI USERA, TO MOŽEMO NAPRAVITI NA NAČIN DA
         // 1) dodamo usera,
         // 2) zatim njegovu rolu i to sve povezali
         // 3) tek onda želimo preusmjeriti usera na login page
         // PREUSMJERAVANJE RADIMO U "SignupComponent.js" datoteci
-        await res.send(result.rowsAffected)
+        // VAŽNO JE STAVITI zAGRADE "{}" nakon "res =>"
 
+        await res.status(200).json({
+            success: true,  // 'Welcome to the JWT Auth'
+            message: "Now you just need to confirm token"
+            //token: JWTToken
+        });
     } catch (err) {
         throw new Error(err)
     }

@@ -26,7 +26,7 @@ class MenuWithOrangeIndicator extends Component {
 
     handleClickLogedUser(index) {
         //console.log("1:  " + index);
-        if(index === 4) {
+        if(index === 5) {
             this.props.onLogout();
         }
         else {

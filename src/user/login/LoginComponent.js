@@ -10,6 +10,7 @@ export default class LoginComponent extends Component {
 
     constructor(props) {
         super(props);
+
         this.onChangeUsername = this.onChangeUsername.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -29,7 +30,8 @@ export default class LoginComponent extends Component {
             sendOneMoreToken: 0,
             receivedUserId: 0,
             expiredPasswordRecoveryToken: 0,
-            messageToDisplay: ''
+            messageToDisplay: '',
+            errorMessageToDisplay: ''
         }
     }
 
@@ -148,58 +150,74 @@ export default class LoginComponent extends Component {
             loading: true
         });
 
-       setTimeout(() => {
+        setTimeout(() => {
+
             // 1 PRIMJER, NE ŽELI MI ULOVITI GREŠKU, KADA USER UNESE KRIVI USERNAME ILI PASSWORD
-            /* axios.post('http://localhost:5000/loginUser', serverport)
-                .then(res => {
-                    localStorage.setItem(USERNAME, JSON.stringify(res.data));
+            axios.post('https://localhost:5000/loginUser', serverport)
+                .then(response => {
 
-                        console.log("LOGIN USER KAO TOCAN RESPONSE");
+                    // if the response is succcess, then we are saving token, currentUser and redirecting user
+                    if (response.data.success === true) {
 
+                        localStorage.setItem(CURRENT_USER, JSON.stringify(response.data.currentUser));
                         this.props.onLogin()
+                    }
+                    else {
+                        console.log("55555 NIJE PRONADEN TAJ USER: " + response.data.errorLoginMessageToDisplay);
+                        this.setState({
+                            password: "",
+                            username: "",
+                            loading: false,
+                            wrongUsernameOrPassword: true,
+                            errorMessageToDisplay: response.data.errorLoginMessageToDisplay
+                        });
+                    }
                 })
                 .catch(function (error) {
-                    this.setState({
-                        password: "",
-                        username: "",
-                        loading: false
-                    });
-                }); */
+
+                    console.log("CCCC: " + error);
+                    //this.setState({
+                    //    password: "",
+                    //    username: "",
+                    //    loading: false
+                    //});
+                });
 
             // 2 PRIMJER, ŽELI ULOVITI GREŠKU, KADA USER UNESE KRIVI USERNAME ILI PASSWORD
-            const url = "http://localhost:5000/loginUser";
+            /* const url = "http://localhost:5000/loginUser";
             const getData = async url => {
                 try {
                     const response = await axios.post(url, serverport);
 
                     // if the response is succcess, then we are saving token, currentUser and redirecting user
-                    if( response.data.success ) {
+                    if (response.data.success === true) {
 
-                        localStorage.setItem(ACCESS_TOKEN, JSON.stringify(response.data.token));
                         localStorage.setItem(CURRENT_USER, JSON.stringify(response.data.currentUser));
                         this.props.onLogin()
                     }
                     else {
-                        //console.log("55555 NIJE PRONADEN TAJ USER: ");
+                        console.log("55555 NIJE PRONADEN TAJ USER: " + response.data.errorLoginMessageToDisplay);
                         this.setState({
                             password: "",
                             username: "",
                             loading: false,
-                            wrongUsernameOrPassword: true
+                            wrongUsernameOrPassword: true,
+                            errorMessageToDisplay: response.data.errorLoginMessageToDisplay
                         });
                     }
 
                 } catch (error) {
-                    //console.log("NIJE PRONADEN TAJ USER: " + error);
+                    console.log("NIJE PRONADEN TAJ USER: " + error);
                     this.setState({
                         password: "",
                         username: "",
                         loading: false,
-                        wrongUsernameOrPassword: true
+                        wrongUsernameOrPassword: true,
+                        errorMessageToDisplay: error.response.data.errorLoginMessageToDisplay
                     });
                 }
             };
-            getData(url);
+            getData(url); */
         }, 500);
     }
 
@@ -213,17 +231,17 @@ export default class LoginComponent extends Component {
             loading: true
         });
 
-        axios.post('http://localhost:5000/sendOneMoreToken', serverport)
-            .then( res => {
+        axios.post('https://localhost:5000/sendOneMoreToken', serverport)
+            .then(res => {
 
-                     if( res.data.success === true ) {
-                        this.setState({
-                            sendOneMoreToken: 1,
-                            loading: false,
-                            showResetTokenButton: 0,
-                            wrongToken: 0
-                        })
-                    }
+                if (res.data.success === true) {
+                    this.setState({
+                        sendOneMoreToken: 1,
+                        loading: false,
+                        showResetTokenButton: 0,
+                        wrongToken: 0
+                    })
+                }
             })
     }
 
@@ -247,26 +265,28 @@ export default class LoginComponent extends Component {
                     <h3 style={{display: "inline"}}>Login</h3>
                     {this.state.numberOfRows === 1 &&
 
-                        <p className="popUpCorrectResponse">Now you just need to confirm link on your email account. </p>
+                    <p className="popUpCorrectResponse">Now you just need to confirm link on your email account. </p>
                     }
                     {this.state.accessToken === 1 &&
 
-                        <p className="popUpWrongResponse">You don't have permission, token for this.
-                            Please login to access permission. </p>
+                    <p className="popUpWrongResponse">You don't have permission, token for this.
+                        Please login to access permission. </p>
                     }
                     {this.state.wrongToken === 1 &&
 
-                        <p className="popUpWrongResponse">Something went wrong with your token. Please try to send one more token </p>
+                    <p className="popUpWrongResponse">Something went wrong with your token. Please try to send one more
+                        token </p>
                     }
                     {this.state.expiredPasswordRecoveryToken === 1 &&
 
-                        <p className="popUpWrongResponse">Your token for password recovery has been expired. Please try to send one more token </p>
+                    <p className="popUpWrongResponse">Your token for password recovery has been expired. Please try to
+                        send one more token </p>
                     }
 
                     {/* <p className="popUpCorrectResponse">You have successfully confirmed your link. Now you can login </p> */}
                     {this.state.confirmAccessToken === 1 &&
 
-                        <p className="popUpCorrectResponse"> {this.state.messageToDisplay} </p>
+                    <p className="popUpCorrectResponse"> {this.state.messageToDisplay} </p>
                     }
                 </div>
                 <form onSubmit={this.onSubmit}>
@@ -279,25 +299,25 @@ export default class LoginComponent extends Component {
                         <label>Password: </label>
                         <input type="text" value={this.state.password} className="form-control"
                                onChange={this.onChangePassword.bind(this)}/>
-                        { this.state.wrongUsernameOrPassword === true &&
+                        {this.state.wrongUsernameOrPassword === true &&
 
-                            <p style={{color: "red"}}>You have inserted wrong username or password or you did not confirmed link on your email account</p>
+                        <p style={{color: "red"}}> {this.state.errorMessageToDisplay} </p>
                         }
                     </div>
                     <div className="form-group" style={{display: 'inline-block'}}>
                         <input type="submit" value="Login" className={buttonClickAllowed}
-                               disabled={!getButtonClickAllowed}  style={{marginRight: '50px'}}/>
+                               disabled={!getButtonClickAllowed} style={{marginRight: '50px'}}/>
                         {this.state.loading === true &&
-                            <LoadingIndicatorBesideElement/>
+                        <LoadingIndicatorBesideElement/>
                         }
                         {this.state.showResetTokenButton === 1 &&
 
-                            <input type="button"  value="Send token" className="button_allowed"
-                                   onClick={this.sendOneMoreTokenFunction.bind(this)}  />
+                        <input type="button" value="Send token" className="button_allowed"
+                               onClick={this.sendOneMoreTokenFunction.bind(this)}/>
                         }
                         {this.state.sendOneMoreToken === 1 &&
 
-                            <p style={{color: "#007bff"}}>We have successfully send you one more token.
+                        <p style={{color: "#007bff"}}>We have successfully send you one more token.
                             Please confirm to login. </p>
                         }
                         <p style={{marginTop: "15px"}}>
@@ -305,6 +325,7 @@ export default class LoginComponent extends Component {
                             <a href={"/forgotPassword"}> Click here for recovery it </a>
                         </p>
                     </div>
+
                 </form>
             </div>
         )

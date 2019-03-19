@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import LoadingIndicatorCenter from './LoadingIndicatorCenter';
 import {withRouter} from "react-router-dom";
+import {ACCESS_TOKEN} from "../constants";
 
 
 class EditComponent extends Component {
@@ -13,12 +14,24 @@ class EditComponent extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
+            userId: '-1',
             name: '',
             address: '',
             loading: false,
             messageToDisplay: '',
             showMessage: false
         };
+    }
+
+    componentWillMount() {
+
+        if ( localStorage.getItem(ACCESS_TOKEN) !== null  && localStorage.getItem(ACCESS_TOKEN) !== "undefined" ) {
+        }
+        else {
+            this.props.history.push({
+                pathname: '/login'
+            })
+        }
     }
 
     componentDidMount() {
@@ -28,16 +41,32 @@ class EditComponent extends Component {
         let menuOrangeIndicator = 3;
         this.props.passClick(menuOrangeIndicator);
 
-        axios.get('http://localhost:5000/edit/' + this.props.match.params.id)
+        axios.get('https://localhost:5000/edit/' + this.props.match.params.id)
             .then(res => {
-                this.setState({
+
+                // 1) IF I DON'T USE ORM, ONLY BASIC QUERY, THEN I NEED TO USE THIS STATEMENT
+                /* this.setState({
                     name: res.data[0].name,
                     address: res.data[0].address
-                });
+                }); */
                 //console.log("ime: "+ res.data.name + " drugo ime: " + res.data[0].name);
+
+                // 2) IF I USE ORM AND AdminRoutesORM.js, then it need to be written in this way
+                if( res.data.success !== '-1' ) {
+                    this.setState({
+                        userId: res.data.success.id,
+                        name: res.data.success.name,
+                        address: res.data.success.address
+                    });
+                }
+                else {
+                    this.setState({
+                        userId: '-1'
+                    })
+                }
             })
             .catch(function (error) {
-                console.log(error);
+                console.log("aaaaa: " + error);
             })
     }
 
@@ -57,65 +86,74 @@ class EditComponent extends Component {
 
         event.preventDefault();
 
-        this.setState({
-            loading: true
-        })
+        if( this.state.userId !== '-1' ) {
 
-        const serverport = {
-            name: this.state.name,
-            address: this.state.address
-        }
+            this.setState({
+                loading: true
+            })
 
-        console.log("zaustavi pokretanje")
-
-        // 1 PRIMJER /////////////////////////////////////??????????????????
-        // Ako bih želio kad korisnik klikne na update i sve se uspješno izvrši i ako ga želim odmah prebaciti
-        // to bih tako da dodam 2 stvari:
-        // 1) dodam tu naredbu  await res.redirect('http://localhost:5000/index'); i zakomentiram naredbu  res.send(result);
-        // 2) uključim naredbu u EditComponent.js   " .then( res  => {
-        //                     this.props.history.push('/index')
-        //                     //setTimeout( () => { this.props.history.push('/index')  }, 10)
-        //                 }
-        //             ); "
-        /* axios.post('http://localhost:5000/update/' + this.props.match.params.id, serverport)
-            .then(res =>
-                    console.log("EDIT COMPONENT 111: " + res.data),
-
-                this.setState({
-                    loading: false
-                })
-
-                //setTimeout( () => { this.props.history.push('/index')  }, 10)
-            )
-            .then(res => {
-                    this.props.history.push('/index')
-                    //setTimeout( () => { this.props.history.push('/index')  }, 10)
+            const userData = {
+                name: this.state.name,
+                address: this.state.address
             }
-        ); */
 
-        setTimeout(() => {
+            console.log("zaustavi pokretanje")
 
-            // 2 PRIMJER ///////////////////// ??????????????????????
-            axios.post('http://localhost:5000/update/' + this.props.match.params.id, serverport)
+            // 1 PRIMJER /////////////////////////////////////??????????????????
+            // Ako bih želio kad korisnik klikne na update i sve se uspješno izvrši i ako ga želim odmah prebaciti
+            // to bih tako da dodam 2 stvari:
+            // 1) dodam tu naredbu  await res.redirect('http://localhost:5000/index'); i zakomentiram naredbu  res.send(result);
+            // 2) uključim naredbu u EditComponent.js   " .then( res  => {
+            //                     this.props.history.push('/index')
+            //                     //setTimeout( () => { this.props.history.push('/index')  }, 10)
+            //                 }
+            //             ); "
+            /* axios.post('http://localhost:5000/update/' + this.props.match.params.id, userData)
                 .then(res =>
+                        console.log("EDIT COMPONENT 111: " + res.data),
 
-                        this.setState({
-                            messageToDisplay: res.data.affectedRows,
-                            loading: false,
-                            showMessage: true
-                        })
+                    this.setState({
+                        loading: false
+                    })
+
                     //setTimeout( () => { this.props.history.push('/index')  }, 10)
-                );
-        }, 500);
+                )
+                .then(res => {
+                        this.props.history.push('/index')
+                        //setTimeout( () => { this.props.history.push('/index')  }, 10)
+                }
+            ); */
 
+            setTimeout(() => {
+
+                // 2 PRIMJER ///////////////////// ??????????????????????
+                axios.post('https://localhost:5000/update/' + this.props.match.params.id, userData)
+                    .then(res => {
+
+                            this.setState({
+                                messageToDisplay: res.data.success,
+                                loading: false,
+                                showMessage: true
+                            })
+                    });
+            }, 500);
+        }
+        else {
+            this.setState({
+                userId: '-1',
+                showMessage: true
+            })
+        }
     }
 
     render() {
 
+        const userId = this.state.userId;
+
         const messageToDisplay = this.state.messageToDisplay;
         const showMessage = this.state.showMessage;
 
-        if (this.state.loading) { // if your component doesn't have to wait for an async action, remove this block
+        if (this.state.loading) {
             return <LoadingIndicatorCenter/>;
         }
 
@@ -139,12 +177,18 @@ class EditComponent extends Component {
                     </div>
                 </form>
 
-                {showMessage === true &&
-                <p style={{color: 'red'}}>
-                    <b> {messageToDisplay === 1 ? 'User has been successfully updated.' :
-                        'User did not successfully updated. Please try again.'}
-                    </b>
-                </p>
+                {showMessage === true && userId === '-1' &&
+                    <p style={{color: 'red'}}>
+                        <b> { 'You have not selected any user'}
+                        </b>
+                    </p>
+                }
+                {showMessage === true && userId !== '-1' &&
+                    <p style={{color: 'red'}}>
+                        <b> {messageToDisplay === true ? 'User has been successfully updated.' :
+                            'User did not successfully updated. Please try again.'}
+                        </b>
+                    </p>
                 }
             </div>
         )

@@ -39,7 +39,7 @@ class ForgotPasswordComponent extends Component {
         });
 
         setTimeout(() => {
-            axios.post('http://localhost:5000/forgotUserPassword', userEmail)
+            axios.post('https://localhost:5000/forgotUserPassword', userEmail)
                 .then(res => {
                     if (res.data.success === true) {
                         this.setState({

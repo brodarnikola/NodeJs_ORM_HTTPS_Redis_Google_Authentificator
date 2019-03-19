@@ -22,13 +22,13 @@ export default class PictureComponent extends Component {
             loading: true
         })
 
-        if (  localStorage.getItem(ACCESS_TOKEN) !== "undefined") {
+        if ( localStorage.getItem(ACCESS_TOKEN) !== null  && localStorage.getItem(ACCESS_TOKEN) !== "undefined" ) {
 
             let config = {
                 headers: {'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem(ACCESS_TOKEN))}
             };
 
-            axios.post('http://localhost:5000/checkPictureComponent', "", config)
+            axios.post('https://localhost:5000/checkPictureComponent', "", config)
                 .then(response => {
 
                     if (response.data.success === false) {
@@ -64,7 +64,7 @@ export default class PictureComponent extends Component {
 
     render() {
 
-        if (this.state.loading) { // if your component doesn't have to wait for an async action, remove this block
+        if (this.state.loading) {
             return <LoadingIndicatorCenter/>;
         }
 

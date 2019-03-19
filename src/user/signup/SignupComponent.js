@@ -79,7 +79,7 @@ export default class SignupComponent extends Component {
 
         console.log("podaci su: " + serverport.username)
 
-        axios.post('http://localhost:5000/checkIfUsernameOrEmailExists', serverport)
+        axios.post('https://localhost:5000/checkIfUsernameOrEmailExists', serverport)
             .then(res =>
                     this.setState({
                         checkEmailOrUsername: res.data
@@ -105,21 +105,22 @@ export default class SignupComponent extends Component {
         });
 
         setTimeout(() => {
-             axios.post('http://localhost:5000/signUpUser', serverport)
-                .then( res =>
+             axios.post('https://localhost:5000/signUpUser', serverport)
+                .then( res => {
 
-                    console.log(""),
-
-                    console.log(""),
-
-                    // To se nalazi na 3 mjestu.. to znamo po zarezima
-                    // Nakon sto smo uspjeno dodali 1) usera, 2) zatim njegovu rolu i to sve povezali
+                    // AKO ŽELIMO REDIREKTATI USERA, TO MOŽEMO NAPRAVITI NA NAČIN DA
+                    // 1) dodamo usera,
+                    // 2) zatim njegovu rolu i to sve povezali
                     // 3) tek onda želimo preusmjeriti usera na login page
-                    this.props.history.push({
-                        pathname: '/login',
-                        state: { numberOfInsertedRows: 1 }
-                    })
-                )
+                    // PREUSMJERAVANJE RADIMO U "SignupComponent.js" datoteci
+                    // VAŽNO JE STAVITI zAGRADE "{}" nakon "res =>"
+                    if( res.data.success === true ) {
+                        this.props.history.push({
+                            pathname: '/login',
+                            state: { numberOfInsertedRows: 1 }
+                        })
+                    }
+                })
         }, 1500);
     }
 

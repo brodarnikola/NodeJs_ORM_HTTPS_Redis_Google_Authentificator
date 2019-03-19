@@ -32,7 +32,7 @@ export default class ConfirmationTokenComponent extends Component {
          2) nacin
          axios.get('http://localhost:5000/edit/' + this.props.match.params.id)*/
 
-        axios.get('http://localhost:5000/confirmation/' + token)
+        axios.get('https://localhost:5000/confirmation/' + token)
             .then(response => {
 
                 if (response.data.success === false) {

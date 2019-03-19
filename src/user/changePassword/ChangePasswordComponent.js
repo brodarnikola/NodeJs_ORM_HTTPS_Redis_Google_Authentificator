@@ -28,7 +28,7 @@ class ChangePasswordComponent extends Component {
 
         let token = this.props.match.params.token;
 
-        axios.post('http://localhost:5000/readforgotPasswordToken/' + token)
+        axios.post('https://localhost:5000/readforgotPasswordToken/' + token)
             .then(response => {
 
                 // 23.01.2019 If token has expired, then I need to redirect user, and display user that message
@@ -79,7 +79,7 @@ class ChangePasswordComponent extends Component {
 
         console.log("change password component: ID razlicit od nule: " + this.state.getUserId)
         setTimeout(() => {
-            axios.post('http://localhost:5000/updateUserPassword', userPassword)
+            axios.post('https://localhost:5000/updateUserPassword', userPassword)
                 .then(res => {
                     if (res.data.success === true) {
                         this.props.history.push({
