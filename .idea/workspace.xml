@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81e65afa-4b3e-4736-ad9a-5d86ac048c03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/database/sequelize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/localhost2/ca.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/localhost3/certificate.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/localhost3/privatekey.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/customers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/roles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/AdminRoutesORM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/usersORM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ConfirmLoginComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/.rnd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/cert.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/client-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/client-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/client.csr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/make-cert.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/server.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localhost/server.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/stateless_form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/stateless_weather.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/titles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/database/DatabaseFunctions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/ServerPortRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/AdminRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IndexComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IndexComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PictureComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PictureComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/changePassword/ChangePasswordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/confirmationToken/ConfirmationTokenComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/forgotPassword/ForgotPasswordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/login/LoginComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/signup/SignupComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -295,8 +250,8 @@
           <entry key="crt" value="4" />
           <entry key="csr" value="5" />
           <entry key="css" value="1" />
-          <entry key="env" value="7" />
-          <entry key="gitignore" value="2" />
+          <entry key="env" value="8" />
+          <entry key="gitignore" value="3" />
           <entry key="hosts" value="2" />
           <entry key="js" value="81" />
           <entry key="json" value="5" />
@@ -308,12 +263,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="7" />
+          <entry key=".env file" value="8" />
           <entry key="CSS" value="1" />
           <entry key="HOCON" value="9" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="81" />
-          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="PLAIN_TEXT" value="59" />
           <entry key="SQL" value="2" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -331,11 +286,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/usersORM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1843">
-              <caret line="264" column="36" selection-start-line="264" selection-start-column="27" selection-end-line="264" selection-end-column="36" />
+            <state relative-caret-position="109">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#2718#3034#0" />
                 <element signature="e#3109#4491#0" />
@@ -353,6 +308,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/proba_orm.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-612" />
@@ -362,34 +335,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/pepac.sql">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/CreateComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#componentWillMount#0;n#CreateComponent#0" />
-                <element signature="n#!!block;n#componentDidMount#0;n#CreateComponent#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EditComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-              <folding>
-                <element signature="n#!!block;n#componentDidMount#0;n#EditComponent#0" />
-                <element signature="n#!!block;n#onChangeHostName#0;n#EditComponent#0" />
-                <element signature="n#!!block;n#onChangePort#0;n#EditComponent#0" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -440,7 +385,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dotenv</find>
       <find>do</find>
       <find>signUp</find>
       <find>se</find>
@@ -470,6 +414,7 @@
       <find>passClick</find>
       <find>loginUser</find>
       <find>onLogin</find>
+      <find>MESSAGEBIRD_API_KEY</find>
     </findStrings>
     <replaceStrings>
       <replace>password</replace>
@@ -527,12 +472,12 @@
         <option value="$PROJECT_DIR$/server/bin/www.js" />
         <option value="$PROJECT_DIR$/server/database/sequelize.js" />
         <option value="$PROJECT_DIR$/src/user/login/LoginComponent.js" />
-        <option value="$PROJECT_DIR$/server/.env" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/routes/usersORM.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/veryGoodNonUsedComponents/MenuWithOrangeIndicator.js" />
         <option value="$PROJECT_DIR$/src/components/WeatherComponent.js" />
+        <option value="$PROJECT_DIR$/server/.env" />
       </list>
     </option>
   </component>
@@ -646,7 +591,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553021520752" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553021872175" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Weather-Scanner-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1037,12 +982,12 @@
       <workItem from="1552908580949" duration="674000" />
       <workItem from="1552911522336" duration="967000" />
       <workItem from="1553019200025" duration="1753000" />
-      <workItem from="1553021016036" duration="504000" />
+      <workItem from="1553021016036" duration="856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466585000" />
+    <option name="totallyTimeSpent" value="466937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1836,9 +1781,6 @@
         <state relative-caret-position="-4182" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/AdminRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1858,20 +1800,13 @@
         <state relative-caret-position="-612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/pepac.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/usersORM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="264" column="36" selection-start-line="264" selection-start-column="27" selection-end-line="264" selection-end-column="36" />
+        <state relative-caret-position="109">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#2718#3034#0" />
             <element signature="e#3109#4491#0" />
@@ -1884,6 +1819,20 @@
             <element signature="n#!!block;n#printValueA#0" />
             <element signature="e#19925#22436#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
