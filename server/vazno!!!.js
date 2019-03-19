@@ -1,0 +1,2 @@
+"1) da bi radio https, moramo obavezno dodati certifikate u server.js file koje smo kreirali preko openssl. " +
+"2) moramo potvrditi localhost, https://localhost:5000/ u google chromu da bi nam https radio"
