@@ -173,14 +173,15 @@ export default class LoginComponent extends Component {
                         });
                     }
                 })
-                .catch(function (error) {
+                .catch(error => {
 
-                    console.log("CCCC: " + error);
-                    //this.setState({
-                    //    password: "",
-                    //    username: "",
-                    //    loading: false
-                    //});
+                    console.log("tu ce uci: " + error);
+                    this.setState({
+                        loading: false,
+                        wrongUsernameOrPassword: true,
+                        errorMessageToDisplay: error.response.data.errorLoginMessageToDisplay
+
+                    });
                 });
 
             // 2 PRIMJER, ŽELI ULOVITI GREŠKU, KADA USER UNESE KRIVI USERNAME ILI PASSWORD

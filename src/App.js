@@ -116,7 +116,7 @@ class App extends Component {
 
     componentDidMount() {
 
-        if ( localStorage.getItem(ACCESS_TOKEN) !== null) {
+        if ( localStorage.getItem(ACCESS_TOKEN) !== null && localStorage.getItem(CURRENT_USER) !== null ) {
 
             let getUserData = JSON.parse(localStorage.getItem(CURRENT_USER))
             const userData = {
@@ -219,9 +219,8 @@ class App extends Component {
 
         if (e === 0) {
 
-            //console.log('0   The link was clicked.' + e);
-            //this.history.push("/index");
             this.setState({
+                isAuthenticated: false,
                 menuLinksNeedToLogin: [
                     {label: 'Login', link: '/login', active: true},
                     {label: 'SignUp', link: '/signup'},
@@ -231,8 +230,8 @@ class App extends Component {
         }
         else if (e === 1) {
 
-            //console.log('1   The link was clicked.' + e);
             this.setState({
+                isAuthenticated: false,
                 menuLinksNeedToLogin: [
                     {label: 'Login', link: '/login'},
                     {label: 'SignUp', link: '/signup', active: true},
@@ -242,8 +241,8 @@ class App extends Component {
         }
         else if (e === 2) {
 
-            //console.log('2   The link was clicked.' + e);
             this.setState({
+                isAuthenticated: false,
                 menuLinksNeedToLogin: [
                     {label: 'Login', link: '/login'},
                     {label: 'SignUp', link: '/signup'},
@@ -338,11 +337,6 @@ class App extends Component {
 
                         <Route path='/weather' render={(props) => <WeatherComponent
                             passClick={this.handleMenuClickLogedUser} {...props}  />}  />
-
-                        {/*  <Route path="/picture" render={(props) => component={PictureComponent}
-                                   authenticated={this.state.isAuthenticated}
-                                          handleLogout={this.handleLogout}
-                                          passClick={this.handleMenuClickLogedUser}    {...props}  />}  />  */}
 
                     </Switch>
                 </div>
