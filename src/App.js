@@ -137,6 +137,7 @@ class App extends Component {
         if (e === 0) {
 
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index', active: true},
                     {label: 'Create', link: '/create'},
@@ -150,6 +151,7 @@ class App extends Component {
         else if (e === 1) {
 
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index'},
                     {label: 'Create', link: '/create', active: true},
@@ -163,6 +165,7 @@ class App extends Component {
         else if (e === 2) {
 
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index'},
                     {label: 'Create', link: '/create'},
@@ -176,6 +179,7 @@ class App extends Component {
         else if (e === 3) {
 
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index'},
                     {label: 'Create', link: '/create'},
@@ -190,6 +194,7 @@ class App extends Component {
 
             console.log("da li ce uci u meni, za vremensku prognozu: " + this.state.menuLinksLoggedUser[4].label)
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index'},
                     {label: 'Create', link: '/create'},
@@ -203,6 +208,7 @@ class App extends Component {
         else if (e === 5) {
 
             this.setState({
+                isAuthenticated: true,
                 menuLinksLoggedUser: [
                     {label: 'Home', link: '/index'},
                     {label: 'Create', link: '/create'},
@@ -255,9 +261,6 @@ class App extends Component {
     handleLogin() {
 
         this.handleMenuClickLogedUser(0)
-        this.setState({
-            isAuthenticated: true
-        })
         console.log("current user je: " + this.state.currentUser)
         this.props.history.push("/index");
     }

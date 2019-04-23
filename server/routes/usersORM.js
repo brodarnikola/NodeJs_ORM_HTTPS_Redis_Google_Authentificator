@@ -161,7 +161,7 @@ router.post('/twofactor/verify', async function (req, res) {
 
     return res.status(400).json({
         success: false,
-        message: "Invalid toke or QR_CODE, verification failed"
+        message: "Invalid token or QR_CODE, verification failed"
     });
 });
 

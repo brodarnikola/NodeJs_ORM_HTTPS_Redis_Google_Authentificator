@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../util/common.css';
 import {ACCESS_TOKEN, CURRENT_USER} from "../constants";
 import axios from "axios";
+import LoadingIndicatorBesideElement from "./LoadingIndicatorBesideElement";
 
 export default class ConfirmLoginComponent extends Component {
 
@@ -11,7 +12,7 @@ export default class ConfirmLoginComponent extends Component {
         this.onChangeQR_CODE = this.onChangeQR_CODE.bind(this)
         this.onChangeSMS_INSERT_PHONE = this.onChangeSMS_INSERT_PHONE.bind(this)
         this.onConfirmOptionSelect = this.onConfirmOptionSelect.bind(this)
-        this.onSubmit = this.onSubmit.bind(this)
+        this.onSubmit_DISABLED_QR_CODE = this.onSubmit_DISABLED_QR_CODE.bind(this)
         this.onSubmitQR_Enabled = this.onSubmitQR_Enabled.bind(this)
         this.onSubmitSMS_INSERT_PHONE = this.onSubmitSMS_INSERT_PHONE.bind(this)
         this.onSubmitSMS_CONFIRM = this.onSubmitSMS_CONFIRM.bind(this)
@@ -24,7 +25,8 @@ export default class ConfirmLoginComponent extends Component {
             otpURL: '',
             chooseConfirmOption: 'nothing',
             phoneNumber: '',
-            verificationPhoneNumber: ''
+            verificationPhoneNumber: '',
+            errorMessageToDisplay: ''
             // nothing user did not select anything,
             // qr_code user did select qr_code confirmation
             // sms confirmation
@@ -138,10 +140,17 @@ export default class ConfirmLoginComponent extends Component {
                         this.props.onLogin()
                     }
                 })
+                .catch(error => {
+                    this.setState({
+                        loading: false,
+                        errorMessageToDisplay: error.response.data.message
+                    });
+                    console.log("GRESKAAA ANDREJAAAA KRIVI RESPONSE" + this.state.errorMessageToDisplay);
+                });
         }, 500);
     }
 
-    onSubmit(e) {
+    onSubmit_DISABLED_QR_CODE(e) {
 
         e.preventDefault();
 
@@ -175,7 +184,11 @@ export default class ConfirmLoginComponent extends Component {
                     }
                 })
                 .catch(error => {
-                    console.log("GRESKAAA ANDREJAAAA KRIVI RESPONSE" + error);
+                    this.setState({
+                        loading: false,
+                        errorMessageToDisplay: error.response.data.message
+                    });
+                    console.log("GRESKAAA ANDREJAAAA KRIVI RESPONSE" + this.state.errorMessageToDisplay);
                 });
         }, 500);
     }
@@ -249,7 +262,7 @@ export default class ConfirmLoginComponent extends Component {
 
                     {this.state.numberOfRows === 1 &&
 
-                    <p className="popUpCorrectResponse">Now you just need to confirm link on your email account. </p>
+                        <p className="popUpCorrectResponse">Now you just need to confirm link on your email account. </p>
                     }
 
                 </div>
@@ -264,13 +277,22 @@ export default class ConfirmLoginComponent extends Component {
                     <input type="text" value={this.state.qurCode} className="form-control"
                            onChange={this.onChangeQR_CODE.bind(this)}/>
 
+                    {this.state.errorMessageToDisplay !== ''  &&
+
+                        <p style={{color: "red"}}> {this.state.errorMessageToDisplay} </p>
+                    }
+
                     <input type="submit" value="Confirm Login" className={buttonClickAllowed}
                            disabled={!getButtonClickAllowed} style={{marginTop: '20px'}}/>
+
+                    {this.state.loading === true &&
+                        <LoadingIndicatorBesideElement/>
+                    }
                 </form>
                 }
                 {this.state.chooseConfirmOption === "QR_CODE_DISABLED" &&
 
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit_DISABLED_QR_CODE}>
 
                     <p style={{marginTop: '20px'}}>You can scan QR code with google authentificator on mobile phone or
                         web browser.
@@ -281,8 +303,17 @@ export default class ConfirmLoginComponent extends Component {
                     <input type="text" value={this.state.qurCode} className="form-control"
                            onChange={this.onChangeQR_CODE.bind(this)} style={{marginTop: '20px'}}/>
 
+                    {this.state.errorMessageToDisplay !== ''  &&
+
+                        <p style={{color: "red"}}> {this.state.errorMessageToDisplay} </p>
+                    }
+
                     <input type="submit" value="Confirm Login" className={buttonClickAllowed}
                            disabled={!getButtonClickAllowed} style={{marginTop: '20px'}}/>
+
+                    {this.state.loading === true &&
+                        <LoadingIndicatorBesideElement/>
+                    }
                 </form>
                 }
                 {this.state.chooseConfirmOption === "SMS_INSERT_PHONE_NUMBER" &&
